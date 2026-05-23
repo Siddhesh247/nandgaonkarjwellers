@@ -8,7 +8,7 @@ OUT = r"C:\Users\ssnan\OneDrive\Desktop\Python Website\products"
 os.makedirs(OUT, exist_ok=True)
 # ── GOLD IMAGE SETS (4 images per product using Pexels jewellery photos)
 GOLD_IMG_SETS = [
-    [r"C:\Users\ssnan\OneDrive\Desktop\Python Website\product images gold\ChatGPT_Image_Dec_25__2025__09_51_17_PM-removebg-preview.png",
+    [r"\product images gold\ChatGPT_Image_Dec_25__2025__09_51_17_PM-removebg-preview.png",
      "https://images.pexels.com/photos/10478906/pexels-photo-10478906.jpeg?auto=compress&w=800",
      "https://images.pexels.com/photos/1191531/pexels-photo-1191531.jpeg?auto=compress&w=800",
      "https://images.pexels.com/photos/691046/pexels-photo-691046.jpeg?auto=compress&w=800"],
