@@ -261,10 +261,26 @@ footer span{color:#C9A84C;}
   <!-- GALLERY -->
   <div class="gallery">
     <div class="main-img-wrap">
-      <img id="main-img" src="C:\Users\ssnan\OneDrive\Desktop\Python Website\product images gold\ChatGPT_Image_Dec_25__2025__09_51_17_PM-removebg-preview.png" alt="Lakshmi Temple Necklace">
+      <img id="main-img" src="../product images gold\g1\1.png" alt="Lakshmi Temple Necklace">
       <span class="badge badge-best">★ Bestseller</span>
     </div>
-    <div class="thumbs"><img class="thumb active" src="C:\Users\ssnan\OneDrive\Desktop\Python Website\product images gold\ChatGPT_Image_Dec_25__2025__09_51_17_PM-removebg-preview.png" alt="View 1" onclick="setMain(this,'C:\Users\ssnan\OneDrive\Desktop\Python Website\product images gold\ChatGPT_Image_Dec_25__2025__09_51_17_PM-removebg-preview.png')"><img class="thumb" src="https://images.pexels.com/photos/10478906/pexels-photo-10478906.jpeg?auto=compress&w=800" alt="View 2" onclick="setMain(this,'https://images.pexels.com/photos/10478906/pexels-photo-10478906.jpeg?auto=compress&w=800')"><img class="thumb" src="https://images.pexels.com/photos/1191531/pexels-photo-1191531.jpeg?auto=compress&w=800" alt="View 3" onclick="setMain(this,'https://images.pexels.com/photos/1191531/pexels-photo-1191531.jpeg?auto=compress&w=800')"><img class="thumb" src="https://images.pexels.com/photos/691046/pexels-photo-691046.jpeg?auto=compress&w=800" alt="View 4" onclick="setMain(this,'https://images.pexels.com/photos/691046/pexels-photo-691046.jpeg?auto=compress&w=800')"></div>
+    <div class="thumbs">
+    <img
+        class="thumb active"
+        src="../product images gold\g1\1.png"
+        data-full="../product images gold\g1\1.png"
+        alt="View 1"
+        onclick="setMain(this)"
+    >
+    
+    <img
+        class="thumb"
+        src="../product images gold\g1\2.png"
+        data-full="../product images gold\g1\2.png"
+        alt="View 2"
+        onclick="setMain(this)"
+    >
+    </div>
   </div>
 
   <!-- INFO -->
@@ -329,7 +345,7 @@ footer span{color:#C9A84C;}
   <p class="related-sub">More Necklace from our collection</p>
   <div class="related-grid">
         <a class="rel-card" href="g2.html">
-          <img src="https://images.pexels.com/photos/691046/pexels-photo-691046.jpeg?auto=compress&w=800" alt="Diamond-Cut Mango Haar" loading="lazy">
+          <img src="../product images gold\g1\1.png" alt="Diamond-Cut Mango Haar" loading="lazy">
           <div class="rel-body">
             <p class="rel-cat">Necklace</p>
             <p class="rel-name">Diamond-Cut Mango Haar</p>
@@ -337,7 +353,7 @@ footer span{color:#C9A84C;}
           </div>
         </a>
         <a class="rel-card" href="g3.html">
-          <img src="https://images.pexels.com/photos/1191531/pexels-photo-1191531.jpeg?auto=compress&w=800" alt="Kundan Bridal Set Necklace" loading="lazy">
+          <img src="../product images gold\g1\1.png" alt="Kundan Bridal Set Necklace" loading="lazy">
           <div class="rel-body">
             <p class="rel-cat">Necklace</p>
             <p class="rel-name">Kundan Bridal Set Necklace</p>
@@ -345,7 +361,7 @@ footer span{color:#C9A84C;}
           </div>
         </a>
         <a class="rel-card" href="g16.html">
-          <img src="C:\Users\ssnan\OneDrive\Desktop\Python Website\product images gold\ChatGPT_Image_Dec_25__2025__09_51_17_PM-removebg-preview.png" alt="Choker Necklace Meenakari" loading="lazy">
+          <img src="../product images gold\g1\1.png" alt="Choker Necklace Meenakari" loading="lazy">
           <div class="rel-body">
             <p class="rel-cat">Necklace</p>
             <p class="rel-name">Choker Necklace Meenakari</p>
@@ -353,7 +369,7 @@ footer span{color:#C9A84C;}
           </div>
         </a>
         <a class="rel-card" href="g17.html">
-          <img src="https://images.pexels.com/photos/691046/pexels-photo-691046.jpeg?auto=compress&w=800" alt="Mangalsutra 18"" loading="lazy">
+          <img src="../product images gold\g1\1.png" alt="Mangalsutra 18"" loading="lazy">
           <div class="rel-body">
             <p class="rel-cat">Necklace</p>
             <p class="rel-name">Mangalsutra 18"</p>
@@ -363,15 +379,29 @@ footer span{color:#C9A84C;}
 </div>
 
 <footer>
-  © 2025 <span>Nandgaonkar Jewellers</span> · Nashik, Maharashtra · <a href="https://wa.me/919518356108" style="color:#C9A84C">+91 95183 56108</a>
+  © 2025 <span>Nandgaonkar Jewellers</span> · Nashik, Maharashtra ·
+  <a href="https://wa.me/919518356108" style="color:#C9A84C">
+    +91 95183 56108
+  </a>
 </footer>
 
 <script>
-function setMain(el, src) {
-  document.getElementById('main-img').src = src;
-  document.querySelectorAll('.thumb').forEach(t => t.classList.remove('active'));
-  el.classList.add('active');
+
+function setMain(el) {
+
+    const src = el.getAttribute('data-full');
+
+    document.getElementById('main-img').src = src;
+
+    document.querySelectorAll('.thumb').forEach(function(t) {
+        t.classList.remove('active');
+    });
+
+    el.classList.add('active');
+
 }
+
 </script>
+
 </body>
 </html>

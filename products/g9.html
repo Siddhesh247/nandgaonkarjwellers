@@ -261,10 +261,18 @@ footer span{color:#C9A84C;}
   <!-- GALLERY -->
   <div class="gallery">
     <div class="main-img-wrap">
-      <img id="main-img" src="https://images.pexels.com/photos/10478906/pexels-photo-10478906.jpeg?auto=compress&w=800" alt="Antique Kada Set">
+      <img id="main-img" src="../product images gold\g1\1.png" alt="Antique Kada Set">
       <span class="badge badge-hot">🔥 Hot</span>
     </div>
-    <div class="thumbs"><img class="thumb active" src="https://images.pexels.com/photos/10478906/pexels-photo-10478906.jpeg?auto=compress&w=800" alt="View 1" onclick="setMain(this,'https://images.pexels.com/photos/10478906/pexels-photo-10478906.jpeg?auto=compress&w=800')"><img class="thumb" src="https://images.pexels.com/photos/10478867/pexels-photo-10478867.jpeg?auto=compress&w=800" alt="View 2" onclick="setMain(this,'https://images.pexels.com/photos/10478867/pexels-photo-10478867.jpeg?auto=compress&w=800')"><img class="thumb" src="https://images.pexels.com/photos/691046/pexels-photo-691046.jpeg?auto=compress&w=800" alt="View 3" onclick="setMain(this,'https://images.pexels.com/photos/691046/pexels-photo-691046.jpeg?auto=compress&w=800')"><img class="thumb" src="https://images.pexels.com/photos/1191531/pexels-photo-1191531.jpeg?auto=compress&w=800" alt="View 4" onclick="setMain(this,'https://images.pexels.com/photos/1191531/pexels-photo-1191531.jpeg?auto=compress&w=800')"></div>
+    <div class="thumbs">
+    <img
+        class="thumb active"
+        src="../product images gold\g1\1.png"
+        data-full="../product images gold\g1\1.png"
+        alt="View 1"
+        onclick="setMain(this)"
+    >
+    </div>
   </div>
 
   <!-- INFO -->
@@ -329,7 +337,7 @@ footer span{color:#C9A84C;}
   <p class="related-sub">More Bangle from our collection</p>
   <div class="related-grid">
         <a class="rel-card" href="g8.html">
-          <img src="https://images.pexels.com/photos/1191531/pexels-photo-1191531.jpeg?auto=compress&w=800" alt="Plain Kadas Bangles Pair" loading="lazy">
+          <img src="../product images gold\g1\1.png" alt="Plain Kadas Bangles Pair" loading="lazy">
           <div class="rel-body">
             <p class="rel-cat">Bangle</p>
             <p class="rel-name">Plain Kadas Bangles Pair</p>
@@ -337,7 +345,7 @@ footer span{color:#C9A84C;}
           </div>
         </a>
         <a class="rel-card" href="g22.html">
-          <img src="https://images.pexels.com/photos/691046/pexels-photo-691046.jpeg?auto=compress&w=800" alt="Gokarna Bangle Set (6pcs)" loading="lazy">
+          <img src="../product images gold\g1\1.png" alt="Gokarna Bangle Set (6pcs)" loading="lazy">
           <div class="rel-body">
             <p class="rel-cat">Bangle</p>
             <p class="rel-name">Gokarna Bangle Set (6pcs)</p>
@@ -345,7 +353,7 @@ footer span{color:#C9A84C;}
           </div>
         </a>
         <a class="rel-card" href="g25.html">
-          <img src="https://images.pexels.com/photos/1721932/pexels-photo-1721932.jpeg?auto=compress&w=800" alt="Baby Gold Bangle (Infant)" loading="lazy">
+          <img src="../product images gold\g1\1.png" alt="Baby Gold Bangle (Infant)" loading="lazy">
           <div class="rel-body">
             <p class="rel-cat">Bangle</p>
             <p class="rel-name">Baby Gold Bangle (Infant)</p>
@@ -353,7 +361,7 @@ footer span{color:#C9A84C;}
           </div>
         </a>
         <a class="rel-card" href="g49.html">
-          <img src="https://images.pexels.com/photos/10478906/pexels-photo-10478906.jpeg?auto=compress&w=800" alt="Half-Bangle Cuff" loading="lazy">
+          <img src="../product images gold\g1\1.png" alt="Half-Bangle Cuff" loading="lazy">
           <div class="rel-body">
             <p class="rel-cat">Bangle</p>
             <p class="rel-name">Half-Bangle Cuff</p>
@@ -363,15 +371,29 @@ footer span{color:#C9A84C;}
 </div>
 
 <footer>
-  © 2025 <span>Nandgaonkar Jewellers</span> · Nashik, Maharashtra · <a href="https://wa.me/919518356108" style="color:#C9A84C">+91 95183 56108</a>
+  © 2025 <span>Nandgaonkar Jewellers</span> · Nashik, Maharashtra ·
+  <a href="https://wa.me/919518356108" style="color:#C9A84C">
+    +91 95183 56108
+  </a>
 </footer>
 
 <script>
-function setMain(el, src) {
-  document.getElementById('main-img').src = src;
-  document.querySelectorAll('.thumb').forEach(t => t.classList.remove('active'));
-  el.classList.add('active');
+
+function setMain(el) {
+
+    const src = el.getAttribute('data-full');
+
+    document.getElementById('main-img').src = src;
+
+    document.querySelectorAll('.thumb').forEach(function(t) {
+        t.classList.remove('active');
+    });
+
+    el.classList.add('active');
+
 }
+
 </script>
+
 </body>
 </html>

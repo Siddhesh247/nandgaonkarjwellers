@@ -261,10 +261,18 @@ footer span{color:#5A6A7A;}
   <!-- GALLERY -->
   <div class="gallery">
     <div class="main-img-wrap">
-      <img id="main-img" src="https://images.pexels.com/photos/8100784/pexels-photo-8100784.jpeg?auto=compress&w=800" alt="Silver Ear Cuff Set">
+      <img id="main-img" src="../product images gold\g1\1.png" alt="Silver Ear Cuff Set">
       
     </div>
-    <div class="thumbs"><img class="thumb active" src="https://images.pexels.com/photos/8100784/pexels-photo-8100784.jpeg?auto=compress&w=800" alt="View 1" onclick="setMain(this,'https://images.pexels.com/photos/8100784/pexels-photo-8100784.jpeg?auto=compress&w=800')"><img class="thumb" src="https://images.pexels.com/photos/3266700/pexels-photo-3266700.jpeg?auto=compress&w=800" alt="View 2" onclick="setMain(this,'https://images.pexels.com/photos/3266700/pexels-photo-3266700.jpeg?auto=compress&w=800')"><img class="thumb" src="https://images.pexels.com/photos/1395306/pexels-photo-1395306.jpeg?auto=compress&w=800" alt="View 3" onclick="setMain(this,'https://images.pexels.com/photos/1395306/pexels-photo-1395306.jpeg?auto=compress&w=800')"><img class="thumb" src="https://images.pexels.com/photos/2735970/pexels-photo-2735970.jpeg?auto=compress&w=800" alt="View 4" onclick="setMain(this,'https://images.pexels.com/photos/2735970/pexels-photo-2735970.jpeg?auto=compress&w=800')"></div>
+    <div class="thumbs">
+    <img
+        class="thumb active"
+        src="../product images gold\g1\1.png"
+        data-full="../product images gold\g1\1.png"
+        alt="View 1"
+        onclick="setMain(this)"
+    >
+    </div>
   </div>
 
   <!-- INFO -->
@@ -329,7 +337,7 @@ footer span{color:#5A6A7A;}
   <p class="related-sub">More Earring from our collection</p>
   <div class="related-grid">
         <a class="rel-card" href="s6.html">
-          <img src="https://images.pexels.com/photos/8100784/pexels-photo-8100784.jpeg?auto=compress&w=800" alt="Silver Jhumka Classic" loading="lazy">
+          <img src="../product images gold\g1\1.png" alt="Silver Jhumka Classic" loading="lazy">
           <div class="rel-body">
             <p class="rel-cat">Earring</p>
             <p class="rel-name">Silver Jhumka Classic</p>
@@ -337,7 +345,7 @@ footer span{color:#5A6A7A;}
           </div>
         </a>
         <a class="rel-card" href="s7.html">
-          <img src="https://images.pexels.com/photos/3266700/pexels-photo-3266700.jpeg?auto=compress&w=800" alt="Oxidised Chandbali" loading="lazy">
+          <img src="../product images gold\g1\1.png" alt="Oxidised Chandbali" loading="lazy">
           <div class="rel-body">
             <p class="rel-cat">Earring</p>
             <p class="rel-name">Oxidised Chandbali</p>
@@ -345,7 +353,7 @@ footer span{color:#5A6A7A;}
           </div>
         </a>
         <a class="rel-card" href="s17.html">
-          <img src="https://images.pexels.com/photos/3266700/pexels-photo-3266700.jpeg?auto=compress&w=800" alt="Silver Hoop Earrings Large" loading="lazy">
+          <img src="../product images gold\g1\1.png" alt="Silver Hoop Earrings Large" loading="lazy">
           <div class="rel-body">
             <p class="rel-cat">Earring</p>
             <p class="rel-name">Silver Hoop Earrings Large</p>
@@ -353,7 +361,7 @@ footer span{color:#5A6A7A;}
           </div>
         </a>
         <a class="rel-card" href="s26.html">
-          <img src="https://images.pexels.com/photos/8100784/pexels-photo-8100784.jpeg?auto=compress&w=800" alt="Silver Stud Earrings Ball" loading="lazy">
+          <img src="../product images gold\g1\1.png" alt="Silver Stud Earrings Ball" loading="lazy">
           <div class="rel-body">
             <p class="rel-cat">Earring</p>
             <p class="rel-name">Silver Stud Earrings Ball</p>
@@ -363,15 +371,29 @@ footer span{color:#5A6A7A;}
 </div>
 
 <footer>
-  © 2025 <span>Nandgaonkar Jewellers</span> · Nashik, Maharashtra · <a href="https://wa.me/919518356108" style="color:#5A6A7A">+91 95183 56108</a>
+  © 2025 <span>Nandgaonkar Jewellers</span> · Nashik, Maharashtra ·
+  <a href="https://wa.me/919518356108" style="color:#5A6A7A">
+    +91 95183 56108
+  </a>
 </footer>
 
 <script>
-function setMain(el, src) {
-  document.getElementById('main-img').src = src;
-  document.querySelectorAll('.thumb').forEach(t => t.classList.remove('active'));
-  el.classList.add('active');
+
+function setMain(el) {
+
+    const src = el.getAttribute('data-full');
+
+    document.getElementById('main-img').src = src;
+
+    document.querySelectorAll('.thumb').forEach(function(t) {
+        t.classList.remove('active');
+    });
+
+    el.classList.add('active');
+
 }
+
 </script>
+
 </body>
 </html>

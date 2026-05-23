@@ -7,156 +7,2011 @@ OUT = r"C:\Users\ssnan\OneDrive\Desktop\Python Website\products"
 
 os.makedirs(OUT, exist_ok=True)
 # ── GOLD IMAGE SETS (4 images per product using Pexels jewellery photos)
-GOLD_IMG_SETS = [
-    [r"\product images gold\ChatGPT_Image_Dec_25__2025__09_51_17_PM-removebg-preview.png",
-     "https://images.pexels.com/photos/10478906/pexels-photo-10478906.jpeg?auto=compress&w=800",
-     "https://images.pexels.com/photos/1191531/pexels-photo-1191531.jpeg?auto=compress&w=800",
-     "https://images.pexels.com/photos/691046/pexels-photo-691046.jpeg?auto=compress&w=800"],
-    ["https://images.pexels.com/photos/691046/pexels-photo-691046.jpeg?auto=compress&w=800",
-     "https://images.pexels.com/photos/1191531/pexels-photo-1191531.jpeg?auto=compress&w=800",
-     "https://images.pexels.com/photos/10478867/pexels-photo-10478867.jpeg?auto=compress&w=800",
-     "https://images.pexels.com/photos/10478906/pexels-photo-10478906.jpeg?auto=compress&w=800"],
-    ["https://images.pexels.com/photos/1191531/pexels-photo-1191531.jpeg?auto=compress&w=800",
-     "https://images.pexels.com/photos/691046/pexels-photo-691046.jpeg?auto=compress&w=800",
-     "https://images.pexels.com/photos/10478906/pexels-photo-10478906.jpeg?auto=compress&w=800",
-     "https://images.pexels.com/photos/10478867/pexels-photo-10478867.jpeg?auto=compress&w=800"],
-    ["https://images.pexels.com/photos/10478906/pexels-photo-10478906.jpeg?auto=compress&w=800",
-     "https://images.pexels.com/photos/10478867/pexels-photo-10478867.jpeg?auto=compress&w=800",
-     "https://images.pexels.com/photos/691046/pexels-photo-691046.jpeg?auto=compress&w=800",
-     "https://images.pexels.com/photos/1191531/pexels-photo-1191531.jpeg?auto=compress&w=800"],
-    ["https://images.pexels.com/photos/1721932/pexels-photo-1721932.jpeg?auto=compress&w=800",
-     "https://images.pexels.com/photos/10478867/pexels-photo-10478867.jpeg?auto=compress&w=800",
-     "https://images.pexels.com/photos/10478906/pexels-photo-10478906.jpeg?auto=compress&w=800",
-     "https://images.pexels.com/photos/691046/pexels-photo-691046.jpeg?auto=compress&w=800"],
-]
-
-SILVER_IMG_SETS = [
-    ["https://images.pexels.com/photos/8100784/pexels-photo-8100784.jpeg?auto=compress&w=800",
-     "https://images.pexels.com/photos/3266700/pexels-photo-3266700.jpeg?auto=compress&w=800",
-     "https://images.pexels.com/photos/1395306/pexels-photo-1395306.jpeg?auto=compress&w=800",
-     "https://images.pexels.com/photos/2735970/pexels-photo-2735970.jpeg?auto=compress&w=800"],
-    ["https://images.pexels.com/photos/3266700/pexels-photo-3266700.jpeg?auto=compress&w=800",
-     "https://images.pexels.com/photos/8100784/pexels-photo-8100784.jpeg?auto=compress&w=800",
-     "https://images.pexels.com/photos/2735970/pexels-photo-2735970.jpeg?auto=compress&w=800",
-     "https://images.pexels.com/photos/1395306/pexels-photo-1395306.jpeg?auto=compress&w=800"],
-    ["https://images.pexels.com/photos/1395306/pexels-photo-1395306.jpeg?auto=compress&w=800",
-     "https://images.pexels.com/photos/2735970/pexels-photo-2735970.jpeg?auto=compress&w=800",
-     "https://images.pexels.com/photos/8100784/pexels-photo-8100784.jpeg?auto=compress&w=800",
-     "https://images.pexels.com/photos/3266700/pexels-photo-3266700.jpeg?auto=compress&w=800"],
-    ["https://images.pexels.com/photos/2735970/pexels-photo-2735970.jpeg?auto=compress&w=800",
-     "https://images.pexels.com/photos/1395306/pexels-photo-1395306.jpeg?auto=compress&w=800",
-     "https://images.pexels.com/photos/3266700/pexels-photo-3266700.jpeg?auto=compress&w=800",
-     "https://images.pexels.com/photos/8100784/pexels-photo-8100784.jpeg?auto=compress&w=800"],
-    ["https://images.pexels.com/photos/8100784/pexels-photo-8100784.jpeg?auto=compress&w=800",
-     "https://images.pexels.com/photos/1395306/pexels-photo-1395306.jpeg?auto=compress&w=800",
-     "https://images.pexels.com/photos/8100784/pexels-photo-8100784.jpeg?auto=compress&w=800",
-     "https://images.pexels.com/photos/2735970/pexels-photo-2735970.jpeg?auto=compress&w=800"],
-]
 
 gold_products = [
-  {"id":"g1","name":"Lakshmi Temple Necklace","category":"Necklace","badge":"Bestseller","weight":"28.5g","karat":"22K","purity":"916 BIS Hallmark","price":"₹1,78,500","making":"₹4,200","desc":"Exquisite temple-style necklace featuring Goddess Lakshmi motif with intricate filigree work. Perfect for weddings and poojas. Each piece is handcrafted by master artisans and carries the BIS 916 hallmark guaranteeing genuine 22 karat gold purity.","features":["Handcrafted Temple Design","BIS 916 Hallmark Certified","22 Karat Gold","Lifetime Buyback Available","Free Cleaning & Polishing"]},
-  {"id":"g2","name":"Diamond-Cut Mango Haar","category":"Necklace","badge":"New","weight":"35.2g","karat":"22K","purity":"916 BIS Hallmark","price":"₹2,20,400","making":"₹5,500","desc":"Traditional mango (keri) design haar with diamond-cut finish. Radiates elegance at every ceremony and family occasion. The diamond-cut technique creates brilliant light reflection from every angle.","features":["Diamond-Cut Finish","Mango (Keri) Motif","BIS 916 Hallmark","22 Karat Gold","Buyback Policy"]},
-  {"id":"g3","name":"Kundan Bridal Set Necklace","category":"Necklace","badge":"Hot","weight":"42.0g","karat":"22K","purity":"916 BIS Hallmark","price":"₹2,63,200","making":"₹6,800","desc":"Royal Kundan-set necklace with meenakari enamelling. Ideal for bridal trousseau and festive occasions. This magnificent piece features hand-set Kundan stones and vibrant enamel work that is characteristic of royal Rajasthani craftsmanship.","features":["Kundan Stone Setting","Meenakari Enamel Work","BIS 916 Hallmark","Bridal Favourite","Royal Craftsmanship"]},
-  {"id":"g4","name":"Elegant Solitaire Ring","category":"Ring","badge":"","weight":"4.8g","karat":"18K","purity":"750 Hallmark","price":"₹30,100","making":"₹1,200","desc":"Classic four-prong solitaire ring crafted in 18K gold. Timeless design that suits everyday wear and special occasions. The clean lines and refined silhouette make this a versatile piece for any wardrobe.","features":["Four-Prong Setting","18 Karat Gold","750 Hallmark","Everyday Wear","Timeless Design"]},
-  {"id":"g5","name":"Floral Cluster Ring","category":"Ring","badge":"New","weight":"5.5g","karat":"22K","purity":"916 BIS Hallmark","price":"₹34,500","making":"₹1,400","desc":"Beautiful floral cluster design ring with textured petals. Great for engagements and anniversaries. Each petal is individually crafted to create a stunning blooming flower effect on your finger.","features":["Floral Cluster Design","Textured Petals","22 Karat Gold","Engagement Ready","BIS Hallmark"]},
-  {"id":"g6","name":"Jhumka Earrings Classic","category":"Earring","badge":"Bestseller","weight":"9.2g","karat":"22K","purity":"916 BIS Hallmark","price":"₹57,700","making":"₹2,200","desc":"Traditional gold jhumka with beaded chain danglers. A timeless favourite worn across generations with ethnic outfits. The bell-shaped body and intricate bead-work make these jhumkas a celebration of Indian jewellery tradition.","features":["Traditional Jhumka Style","Beaded Danglers","22 Karat Gold","Lightweight Design","BIS 916 Hallmark"]},
-  {"id":"g7","name":"Peacock Bali Earrings","category":"Earring","badge":"","weight":"7.5g","karat":"22K","purity":"916 BIS Hallmark","price":"₹47,000","making":"₹1,800","desc":"Peacock-inspired bali earrings with intricate feather detailing. Perfect for sarees and lehengas. The peacock — a symbol of grace and beauty — is rendered in exquisite detail by skilled artisans.","features":["Peacock Motif","Intricate Feather Detail","22 Karat Gold","Ethnic Wear","BIS Hallmark"]},
-  {"id":"g8","name":"Plain Kadas Bangles Pair","category":"Bangle","badge":"","weight":"22.0g","karat":"22K","purity":"916 BIS Hallmark","price":"₹1,37,800","making":"₹3,200","desc":"Smooth plain kadas bangles — the epitome of classic simplicity. A must-have in every jewellery collection. The high-polish finish gives these kadas a brilliant mirror-like shine.","features":["High-Polish Finish","Smooth Plain Design","22 Karat Gold","Pair of 2","BIS 916 Hallmark"]},
-  {"id":"g9","name":"Antique Kada Set","category":"Bangle","badge":"Hot","weight":"32.4g","karat":"22K","purity":"916 BIS Hallmark","price":"₹2,03,100","making":"₹4,800","desc":"Antique finish kadas with engraved floral motifs. Polished on inside, matte antique exterior — artisan craftsmanship at its finest.","features":["Antique Finish","Engraved Floral Motifs","Polished Interior","22 Karat Gold","BIS Hallmark"]},
-  {"id":"g10","name":"Twisted Rope Bracelet","category":"Bracelet","badge":"New","weight":"8.5g","karat":"22K","purity":"916 BIS Hallmark","price":"₹53,300","making":"₹1,800","desc":"Elegant twisted rope-pattern gold bracelet with box clasp. Lightweight yet sturdy for daily wear. The rope twist pattern is achieved through a precise hand-twisting technique that creates beautiful texture.","features":["Twisted Rope Pattern","Box Clasp","Daily Wear","22 Karat Gold","BIS Hallmark"]},
-  {"id":"g11","name":"Ganesh Pendant","category":"Pendant","badge":"Bestseller","weight":"3.2g","karat":"22K","purity":"916 BIS Hallmark","price":"₹20,100","making":"₹900","desc":"Lord Ganesha pendant with fine detailing. Auspicious and elegant, suitable for daily devotional wear. The remover of obstacles is depicted in fine detail with a seated pose and traditional attributes.","features":["Lord Ganesha Motif","Fine Detailing","22 Karat Gold","Devotional Wear","BIS Hallmark"]},
-  {"id":"g12","name":"Heart Locket Pendant","category":"Pendant","badge":"","weight":"2.8g","karat":"18K","purity":"750 Hallmark","price":"₹17,600","making":"₹800","desc":"Romantic heart-shaped locket pendant, ideal as a gift for loved ones on birthdays and anniversaries. Opens to hold a tiny photo or keepsake inside.","features":["Opens as Locket","Heart Shape","18 Karat Gold","Perfect Gift","750 Hallmark"]},
-  {"id":"g13","name":"Singapore Chain 22\"","category":"Chain","badge":"","weight":"6.5g","karat":"22K","purity":"916 BIS Hallmark","price":"₹40,800","making":"₹1,100","desc":"Classic Singapore chain with machine-cut precision links. Lightweight and perfect for pendants or standalone wear. The interlocking pattern creates flexible, fluid movement.","features":["Machine-Cut Links","22\" Length","Pendant Ready","22 Karat Gold","BIS Hallmark"]},
-  {"id":"g14","name":"Figaro Link Chain 24\"","category":"Chain","badge":"New","weight":"9.2g","karat":"22K","purity":"916 BIS Hallmark","price":"₹57,700","making":"₹1,500","desc":"Bold Figaro link chain design. Masculine and feminine both — versatile for all occasions. Features the classic 3-small-1-large link pattern of Italian origin.","features":["Figaro Link Pattern","24\" Length","Unisex Design","22 Karat Gold","BIS Hallmark"]},
-  {"id":"g15","name":"Gold Payal with Bells","category":"Anklet","badge":"","weight":"15.5g","karat":"22K","purity":"916 BIS Hallmark","price":"₹97,200","making":"₹2,800","desc":"Traditional gold payal/anklet with hanging bells. Auspicious sound and beautiful design for brides and festivals. The ghungroo bells produce a melodious sound with every step.","features":["Ghungroo Bells","Traditional Payal","22 Karat Gold","Bridal Wear","BIS Hallmark"]},
-  {"id":"g16","name":"Choker Necklace Meenakari","category":"Necklace","badge":"Hot","weight":"24.5g","karat":"22K","purity":"916 BIS Hallmark","price":"₹1,53,600","making":"₹5,000","desc":"Stunning choker necklace with blue and red meenakari enamel work. Bridal favourite across Maharashtra. The vibrant colours are fired into the gold using traditional kiln techniques.","features":["Meenakari Enamel","Choker Style","Bridal Favourite","22 Karat Gold","BIS Hallmark"]},
-  {"id":"g17","name":"Mangalsutra 18\"","category":"Necklace","badge":"Bestseller","weight":"8.5g","karat":"22K","purity":"916 BIS Hallmark","price":"₹53,300","making":"₹1,600","desc":"Traditional mangalsutra with black bead chain and gold pendant. Essential bridal jewellery symbolising marital status and the sacred bond between husband and wife.","features":["Black Bead Chain","Gold Pendant","18\" Length","22 Karat Gold","Traditional Design"]},
-  {"id":"g18","name":"Navratna Finger Ring","category":"Ring","badge":"","weight":"6.2g","karat":"22K","purity":"916 BIS Hallmark","price":"₹38,900","making":"₹1,500","desc":"Nine gemstone navratna ring for astrological benefits. Includes ruby, pearl, coral, emerald, yellow sapphire, blue sapphire, diamond, cat's eye, hessonite — each representing a planet.","features":["9 Gemstones","Astrological Benefits","22 Karat Gold","BIS Hallmark","Planetary Representation"]},
-  {"id":"g19","name":"Chandbali Earrings","category":"Earring","badge":"New","weight":"11.5g","karat":"22K","purity":"916 BIS Hallmark","price":"₹72,100","making":"₹2,800","desc":"Traditional chandbali (moon-shaped) earrings with pearl drops. Stunning for weddings and receptions. The crescent moon shape is embellished with delicate filigree and hanging pearl drops.","features":["Moon (Chand) Shape","Pearl Drops","Filigree Work","22 Karat Gold","BIS Hallmark"]},
-  {"id":"g20","name":"Gold Nose Ring (Nath)","category":"Earring","badge":"","weight":"2.5g","karat":"22K","purity":"916 BIS Hallmark","price":"₹15,700","making":"₹700","desc":"Elegant bridal nath with pearl and ruby accents. Traditional Maharashtrian bridal jewellery that adds a touch of regal grace to the bride's look.","features":["Pearl & Ruby Accents","Maharashtrian Style","Bridal Nath","22 Karat Gold","BIS Hallmark"]},
-  {"id":"g21","name":"Coin Necklace Set","category":"Necklace","badge":"","weight":"30.0g","karat":"22K","purity":"916 BIS Hallmark","price":"₹1,88,000","making":"₹4,500","desc":"Multi-layer coin necklace with goddess Lakshmi coins. Symbol of prosperity and traditional craftsmanship.","features":["Lakshmi Coin Design","Multi-Layer","Symbol of Prosperity","22 Karat Gold","BIS Hallmark"]},
-  {"id":"g22","name":"Gokarna Bangle Set (6pcs)","category":"Bangle","badge":"Bestseller","weight":"38.5g","karat":"22K","purity":"916 BIS Hallmark","price":"₹2,41,500","making":"₹6,000","desc":"Six-piece gold bangle set in traditional Gokarna style with carved edges. Perfect for festive occasions.","features":["Set of 6 Bangles","Carved Edges","Gokarna Style","22 Karat Gold","BIS Hallmark"]},
-  {"id":"g23","name":"Box Link Bracelet","category":"Bracelet","badge":"","weight":"7.2g","karat":"22K","purity":"916 BIS Hallmark","price":"₹45,100","making":"₹1,500","desc":"Sleek box-link bracelet with lobster clasp. Modern minimalist style for professional women.","features":["Box Link Pattern","Lobster Clasp","Modern Design","22 Karat Gold","BIS Hallmark"]},
-  {"id":"g24","name":"Om Pendant 22K","category":"Pendant","badge":"","weight":"4.1g","karat":"22K","purity":"916 BIS Hallmark","price":"₹25,700","making":"₹950","desc":"Sacred Om symbol pendant with fine engraving. Spiritual and stylish for everyday devotional wear.","features":["Sacred Om Symbol","Fine Engraving","22 Karat Gold","Daily Wear","BIS Hallmark"]},
-  {"id":"g25","name":"Baby Gold Bangle (Infant)","category":"Bangle","badge":"New","weight":"3.5g","karat":"22K","purity":"916 BIS Hallmark","price":"₹21,900","making":"₹700","desc":"Delicate gold bangle for newborns and infants. A traditional gifting choice for baby naming ceremonies.","features":["Infant Size","Delicate Design","22 Karat Gold","Baby Ceremony Gift","BIS Hallmark"]},
-  {"id":"g26","name":"Lotus Stud Earrings","category":"Earring","badge":"","weight":"2.8g","karat":"22K","purity":"916 BIS Hallmark","price":"₹17,600","making":"₹700","desc":"Delicate lotus flower stud earrings. Simple, elegant and perfect for everyday wear.","features":["Lotus Flower Design","Stud Style","22 Karat Gold","Everyday Wear","BIS Hallmark"]},
-  {"id":"g27","name":"Kali Haar Necklace","category":"Necklace","badge":"","weight":"26.5g","karat":"22K","purity":"916 BIS Hallmark","price":"₹1,66,100","making":"₹4,000","desc":"Long kali (black bead) haar with gold caps and pendant. Traditional Maharashtrian jewellery staple.","features":["Black Bead Haar","Gold Caps","Long Style","22 Karat Gold","BIS Hallmark"]},
-  {"id":"g28","name":"Designer Toe Rings (Pair)","category":"Ring","badge":"","weight":"2.0g","karat":"22K","purity":"916 BIS Hallmark","price":"₹12,500","making":"₹500","desc":"Traditional toe rings (bichhiya) with floral design. Auspicious for married women and brides.","features":["Floral Design","Pair of 2","Bichhiya Style","22 Karat Gold","BIS Hallmark"]},
-  {"id":"g29","name":"Gold Tikka Maang","category":"Necklace","badge":"Hot","weight":"7.5g","karat":"22K","purity":"916 BIS Hallmark","price":"₹47,000","making":"₹1,800","desc":"Stunning gold maang tikka with peacock motif and hanging pearls. Ideal bridal head jewellery.","features":["Peacock Motif","Hanging Pearls","Maang Tikka","22 Karat Gold","BIS Hallmark"]},
-  {"id":"g30","name":"Curb Link Chain 20\"","category":"Chain","badge":"","weight":"7.8g","karat":"22K","purity":"916 BIS Hallmark","price":"₹48,900","making":"₹1,300","desc":"Heavy curb link chain with excellent lustre. Suitable for men and women who love bold jewellery.","features":["Curb Link Pattern","20\" Length","Bold Style","22 Karat Gold","BIS Hallmark"]},
-  {"id":"g31","name":"Hoop Bali Earrings","category":"Earring","badge":"","weight":"5.5g","karat":"22K","purity":"916 BIS Hallmark","price":"₹34,500","making":"₹1,200","desc":"Classic gold hoop bali earrings with click closure. Versatile and comfortable for daily wear.","features":["Hoop Design","Click Closure","Daily Wear","22 Karat Gold","BIS Hallmark"]},
-  {"id":"g32","name":"Bridal Haath Phool","category":"Bracelet","badge":"Hot","weight":"18.5g","karat":"22K","purity":"916 BIS Hallmark","price":"₹1,16,000","making":"₹3,500","desc":"Traditional haath phool (hand flower bracelet) with ring and chain. Essential bridal accessory for henna ceremonies.","features":["Ring + Chain Design","Haath Phool Style","Bridal Accessory","22 Karat Gold","BIS Hallmark"]},
-  {"id":"g33","name":"Gold Mathapatti","category":"Necklace","badge":"New","weight":"22.0g","karat":"22K","purity":"916 BIS Hallmark","price":"₹1,37,800","making":"₹4,200","desc":"Elaborate bridal mathapatti (forehead ornament) with floral chains. Unique Maharashtrian bridal tradition.","features":["Mathapatti Design","Floral Chains","Maharashtrian Bridal","22 Karat Gold","BIS Hallmark"]},
-  {"id":"g34","name":"Antique Jhumki Drop","category":"Earring","badge":"Bestseller","weight":"10.5g","karat":"22K","purity":"916 BIS Hallmark","price":"₹65,800","making":"₹2,500","desc":"Antique-finish jhumki with ruby and emerald accents. Heritage craftsmanship for contemporary brides.","features":["Antique Finish","Ruby & Emerald Accents","Heritage Design","22 Karat Gold","BIS Hallmark"]},
-  {"id":"g35","name":"Diamond Bar Ring","category":"Ring","badge":"","weight":"3.5g","karat":"18K","purity":"750 Hallmark","price":"₹21,900","making":"₹1,000","desc":"Minimalist gold bar ring — sleek and modern. Stackable with other rings for a trendy look.","features":["Bar Design","Stackable","Modern Style","18 Karat Gold","750 Hallmark"]},
-  {"id":"g36","name":"Polki Set Necklace","category":"Necklace","badge":"Hot","weight":"45.0g","karat":"22K","purity":"916 BIS Hallmark","price":"₹2,82,200","making":"₹8,000","desc":"Royal polki diamond uncut necklace set. Mughal-inspired artistry for weddings and grand ceremonies.","features":["Polki Diamonds","Uncut Stones","Mughal Design","22 Karat Gold","BIS Hallmark"]},
-  {"id":"g37","name":"Lakshmi Coin Pendant","category":"Pendant","badge":"","weight":"5.0g","karat":"22K","purity":"916 BIS Hallmark","price":"₹31,300","making":"₹1,100","desc":"Embossed Lakshmi coin pendant — auspicious and elegant for daily wear and gifting.","features":["Lakshmi Embossed","Coin Shape","Daily Wear","22 Karat Gold","BIS Hallmark"]},
-  {"id":"g38","name":"Broad Herringbone Chain","category":"Chain","badge":"New","weight":"12.0g","karat":"22K","purity":"916 BIS Hallmark","price":"₹75,200","making":"₹2,000","desc":"Flat herringbone chain with silky smooth texture. A statement piece for confident women.","features":["Herringbone Pattern","Flat Design","Statement Piece","22 Karat Gold","BIS Hallmark"]},
-  {"id":"g39","name":"Gold Anklet with Ghungroo","category":"Anklet","badge":"Bestseller","weight":"20.0g","karat":"22K","purity":"916 BIS Hallmark","price":"₹1,25,400","making":"₹3,500","desc":"Ornate gold anklet with ghungroo bells and chain detail. Melodious and mesmerising — a bridal staple.","features":["Ghungroo Bells","Ornate Design","Bridal Staple","22 Karat Gold","BIS Hallmark"]},
-  {"id":"g40","name":"Patta Bracelet Wide","category":"Bracelet","badge":"","weight":"14.5g","karat":"22K","purity":"916 BIS Hallmark","price":"₹90,900","making":"₹2,800","desc":"Wide flat patta (plate) bracelet with engraved floral border. A bold statement piece.","features":["Wide Plate Design","Engraved Border","Bold Style","22 Karat Gold","BIS Hallmark"]},
-  {"id":"g41","name":"Tri-Tone Gold Ring","category":"Ring","badge":"New","weight":"5.8g","karat":"18K","purity":"750 Hallmark","price":"₹36,400","making":"₹1,300","desc":"Three-tone gold ring combining yellow, white and rose gold in a wave design. Modern and fashionable.","features":["Tri-Tone Design","Yellow + White + Rose","Wave Pattern","18 Karat Gold","750 Hallmark"]},
-  {"id":"g42","name":"Filigree Drop Earrings","category":"Earring","badge":"","weight":"6.5g","karat":"22K","purity":"916 BIS Hallmark","price":"₹40,800","making":"₹1,800","desc":"Handcrafted filigree work drop earrings with intricate wire patterns. Showcases goldsmith artistry.","features":["Handcrafted Filigree","Wire Patterns","Artisan Work","22 Karat Gold","BIS Hallmark"]},
-  {"id":"g43","name":"Lotus Pendant Necklace","category":"Pendant","badge":"","weight":"3.8g","karat":"22K","purity":"916 BIS Hallmark","price":"₹23,800","making":"₹900","desc":"Blooming lotus pendant — symbol of purity and grace. Beautiful with both ethnic and western attire.","features":["Lotus Symbol","Blooming Design","Versatile Wear","22 Karat Gold","BIS Hallmark"]},
-  {"id":"g44","name":"Italian Wheat Chain 22\"","category":"Chain","badge":"","weight":"8.0g","karat":"22K","purity":"916 BIS Hallmark","price":"₹50,200","making":"₹1,400","desc":"Elegant Italian wheat (spiga) chain with smooth texture. Lightweight and suitable for pendants.","features":["Wheat Link Pattern","22\" Length","Italian Style","22 Karat Gold","BIS Hallmark"]},
-  {"id":"g45","name":"Kundan Maang Tikka","category":"Necklace","badge":"Hot","weight":"9.5g","karat":"22K","purity":"916 BIS Hallmark","price":"₹59,600","making":"₹2,000","desc":"Kundan set maang tikka with pearl drops. Stunning centrepiece for bridal and festive looks.","features":["Kundan Setting","Pearl Drops","Maang Tikka","22 Karat Gold","BIS Hallmark"]},
-  {"id":"g46","name":"Kids Finger Ring","category":"Ring","badge":"New","weight":"1.5g","karat":"22K","purity":"916 BIS Hallmark","price":"₹9,400","making":"₹400","desc":"Cute floral design finger ring for children. Perfect gifting for birthdays and baby ceremonies.","features":["Children's Size","Floral Design","Safe for Kids","22 Karat Gold","BIS Hallmark"]},
-  {"id":"g47","name":"Gold Ear Chain Sahara","category":"Earring","badge":"","weight":"4.2g","karat":"22K","purity":"916 BIS Hallmark","price":"₹26,300","making":"₹1,000","desc":"Delicate ear chain connecting stud to top of ear. Trendy and distinctive Bollywood-inspired look.","features":["Ear Chain Design","Stud to Top","Trendy Style","22 Karat Gold","BIS Hallmark"]},
-  {"id":"g48","name":"Bajuband Armlet","category":"Bracelet","badge":"Bestseller","weight":"16.5g","karat":"22K","purity":"916 BIS Hallmark","price":"₹1,03,500","making":"₹3,200","desc":"Traditional bajuband (armlet) with adjustable chain. Bridal upper-arm jewellery crafted to perfection.","features":["Bajuband Style","Adjustable Chain","Upper Arm Wear","22 Karat Gold","BIS Hallmark"]},
-  {"id":"g49","name":"Half-Bangle Cuff","category":"Bangle","badge":"","weight":"12.0g","karat":"22K","purity":"916 BIS Hallmark","price":"₹75,200","making":"₹2,400","desc":"Open-end cuff bangle with geometric diamond-cut pattern. Contemporary look with traditional gold purity.","features":["Open Cuff Design","Diamond-Cut Pattern","Contemporary Style","22 Karat Gold","BIS Hallmark"]},
-  {"id":"g50","name":"Five Petal Flower Anklet","category":"Anklet","badge":"New","weight":"12.5g","karat":"22K","purity":"916 BIS Hallmark","price":"₹78,400","making":"₹2,500","desc":"Delicate flower charm anklet with bell drops. Feminine and elegant for festive occasions and weddings.","features":["Flower Charms","Bell Drops","Feminine Design","22 Karat Gold","BIS Hallmark"]},
+{
+    "id":"g1",
+    "name":"Lakshmi Temple Necklace",
+    "images":[r"product images gold\g1\1.png",r"product images gold\g1\2.png"],
+    "category":"Necklace",
+    "badge":"Bestseller",
+    "weight":"28.5g",
+    "karat":"22K",
+    "purity":"916 BIS Hallmark",
+    "price":"₹1,78,500",
+    "making":"₹4,200",
+    "desc":"Exquisite temple-style necklace featuring Goddess Lakshmi motif with intricate filigree work. Perfect for weddings and poojas. Each piece is handcrafted by master artisans and carries the BIS 916 hallmark guaranteeing genuine 22 karat gold purity.",
+    "features":[
+        "Handcrafted Temple Design",
+        "BIS 916 Hallmark Certified",
+        "22 Karat Gold",
+        "Lifetime Buyback Available",
+        "Free Cleaning & Polishing"
+    ]
+},
+{
+    "id":"g2",
+    "name":"Diamond-Cut Mango Haar",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Necklace",
+    "badge":"New",
+    "weight":"35.2g",
+    "karat":"22K",
+    "purity":"916 BIS Hallmark",
+    "price":"₹2,20,400",
+    "making":"₹5,500",
+    "desc":"Traditional mango (keri) design haar with diamond-cut finish. Radiates elegance at every ceremony and family occasion. The diamond-cut technique creates brilliant light reflection from every angle.",
+    "features":[
+        "Diamond-Cut Finish",
+        "Mango (Keri) Motif",
+        "BIS 916 Hallmark",
+        "22 Karat Gold",
+        "Buyback Policy"
+    ]
+},
+{
+    "id":"g3",
+    "name":"Kundan Bridal Set Necklace",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Necklace",
+    "badge":"Hot",
+    "weight":"42.0g",
+    "karat":"22K",
+    "purity":"916 BIS Hallmark",
+    "price":"₹2,63,200",
+    "making":"₹6,800",
+    "desc":"Royal Kundan-set necklace with meenakari enamelling. Ideal for bridal trousseau and festive occasions. This magnificent piece features hand-set Kundan stones and vibrant enamel work that is characteristic of royal Rajasthani craftsmanship.",
+    "features":[
+        "Kundan Stone Setting",
+        "Meenakari Enamel Work",
+        "BIS 916 Hallmark",
+        "Bridal Favourite",
+        "Royal Craftsmanship"
+    ]
+},
+{
+    "id":"g4",
+    "name":"Elegant Solitaire Ring",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Ring",
+    "badge":"",
+    "weight":"4.8g",
+    "karat":"18K",
+    "purity":"750 Hallmark",
+    "price":"₹30,100",
+    "making":"₹1,200",
+    "desc":"Classic four-prong solitaire ring crafted in 18K gold. Timeless design that suits everyday wear and special occasions. The clean lines and refined silhouette make this a versatile piece for any wardrobe.",
+    "features":[
+        "Four-Prong Setting",
+        "18 Karat Gold",
+        "750 Hallmark",
+        "Everyday Wear",
+        "Timeless Design"
+    ]
+},
+{
+    "id":"g5",
+    "name":"Floral Cluster Ring",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Ring",
+    "badge":"New",
+    "weight":"5.5g",
+    "karat":"22K",
+    "purity":"916 BIS Hallmark",
+    "price":"₹34,500",
+    "making":"₹1,400",
+    "desc":"Beautiful floral cluster design ring with textured petals. Great for engagements and anniversaries. Each petal is individually crafted to create a stunning blooming flower effect on your finger.",
+    "features":[
+        "Floral Cluster Design",
+        "Textured Petals",
+        "22 Karat Gold",
+        "Engagement Ready",
+        "BIS Hallmark"
+    ]
+},
+{
+    "id":"g6",
+    "name":"Jhumka Earrings Classic",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Earring",
+    "badge":"Bestseller",
+    "weight":"9.2g",
+    "karat":"22K",
+    "purity":"916 BIS Hallmark",
+    "price":"₹57,700",
+    "making":"₹2,200",
+    "desc":"Traditional gold jhumka with beaded chain danglers. A timeless favourite worn across generations with ethnic outfits. The bell-shaped body and intricate bead-work make these jhumkas a celebration of Indian jewellery tradition.",
+    "features":[
+        "Traditional Jhumka Style",
+        "Beaded Danglers",
+        "22 Karat Gold",
+        "Lightweight Design",
+        "BIS 916 Hallmark"
+    ]
+},
+{
+    "id":"g7",
+    "name":"Peacock Bali Earrings",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Earring",
+    "badge":"",
+    "weight":"7.5g",
+    "karat":"22K",
+    "purity":"916 BIS Hallmark",
+    "price":"₹47,000",
+    "making":"₹1,800",
+    "desc":"Peacock-inspired bali earrings with intricate feather detailing. Perfect for sarees and lehengas. The peacock — a symbol of grace and beauty — is rendered in exquisite detail by skilled artisans.",
+    "features":[
+        "Peacock Motif",
+        "Intricate Feather Detail",
+        "22 Karat Gold",
+        "Ethnic Wear",
+        "BIS Hallmark"
+    ]
+},
+{
+    "id":"g8",
+    "name":"Plain Kadas Bangles Pair",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Bangle",
+    "badge":"",
+    "weight":"22.0g",
+    "karat":"22K",
+    "purity":"916 BIS Hallmark",
+    "price":"₹1,37,800",
+    "making":"₹3,200",
+    "desc":"Smooth plain kadas bangles — the epitome of classic simplicity. A must-have in every jewellery collection. The high-polish finish gives these kadas a brilliant mirror-like shine.",
+    "features":[
+        "High-Polish Finish",
+        "Smooth Plain Design",
+        "22 Karat Gold",
+        "Pair of 2",
+        "BIS 916 Hallmark"
+    ]
+},
+{
+    "id":"g9",
+    "name":"Antique Kada Set",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Bangle",
+    "badge":"Hot",
+    "weight":"32.4g",
+    "karat":"22K",
+    "purity":"916 BIS Hallmark",
+    "price":"₹2,03,100",
+    "making":"₹4,800",
+    "desc":"Antique finish kadas with engraved floral motifs. Polished on inside, matte antique exterior — artisan craftsmanship at its finest.",
+    "features":[
+        "Antique Finish",
+        "Engraved Floral Motifs",
+        "Polished Interior",
+        "22 Karat Gold",
+        "BIS Hallmark"
+    ]
+},
+{
+    "id":"g10",
+    "name":"Twisted Rope Bracelet",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Bracelet",
+    "badge":"New",
+    "weight":"8.5g",
+    "karat":"22K",
+    "purity":"916 BIS Hallmark",
+    "price":"₹53,300",
+    "making":"₹1,800",
+    "desc":"Elegant twisted rope-pattern gold bracelet with box clasp. Lightweight yet sturdy for daily wear. The rope twist pattern is achieved through a precise hand-twisting technique that creates beautiful texture.",
+    "features":[
+        "Twisted Rope Pattern",
+        "Box Clasp",
+        "Daily Wear",
+        "22 Karat Gold",
+        "BIS Hallmark"
+    ]
+},
+  {
+    "id":"g11",
+    "name":"Ganesh Pendant",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Pendant",
+    "badge":"Bestseller",
+    "weight":"3.2g",
+    "karat":"22K",
+    "purity":"916 BIS Hallmark",
+    "price":"₹20,100",
+    "making":"₹900",
+    "desc":"Lord Ganesha pendant with fine detailing. Auspicious and elegant, suitable for daily devotional wear. The remover of obstacles is depicted in fine detail with a seated pose and traditional attributes.",
+    "features":[
+        "Lord Ganesha Motif",
+        "Fine Detailing",
+        "22 Karat Gold",
+        "Devotional Wear",
+        "BIS Hallmark"
+    ]
+},
+{
+    "id":"g12",
+    "name":"Heart Locket Pendant",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Pendant",
+    "badge":"",
+    "weight":"2.8g",
+    "karat":"18K",
+    "purity":"750 Hallmark",
+    "price":"₹17,600",
+    "making":"₹800",
+    "desc":"Romantic heart-shaped locket pendant, ideal as a gift for loved ones on birthdays and anniversaries. Opens to hold a tiny photo or keepsake inside.",
+    "features":[
+        "Opens as Locket",
+        "Heart Shape",
+        "18 Karat Gold",
+        "Perfect Gift",
+        "750 Hallmark"
+    ]
+},
+{
+    "id":"g13",
+    "name":"Singapore Chain 22\"",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Chain",
+    "badge":"",
+    "weight":"6.5g",
+    "karat":"22K",
+    "purity":"916 BIS Hallmark",
+    "price":"₹40,800",
+    "making":"₹1,100",
+    "desc":"Classic Singapore chain with machine-cut precision links. Lightweight and perfect for pendants or standalone wear. The interlocking pattern creates flexible, fluid movement.",
+    "features":[
+        "Machine-Cut Links",
+        "22\" Length",
+        "Pendant Ready",
+        "22 Karat Gold",
+        "BIS Hallmark"
+    ]
+},
+{
+    "id":"g14",
+    "name":"Figaro Link Chain 24\"",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Chain",
+    "badge":"New",
+    "weight":"9.2g",
+    "karat":"22K",
+    "purity":"916 BIS Hallmark",
+    "price":"₹57,700",
+    "making":"₹1,500",
+    "desc":"Bold Figaro link chain design. Masculine and feminine both — versatile for all occasions. Features the classic 3-small-1-large link pattern of Italian origin.",
+    "features":[
+        "Figaro Link Pattern",
+        "24\" Length",
+        "Unisex Design",
+        "22 Karat Gold",
+        "BIS Hallmark"
+    ]
+},
+{
+    "id":"g15",
+    "name":"Gold Payal with Bells",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Anklet",
+    "badge":"",
+    "weight":"15.5g",
+    "karat":"22K",
+    "purity":"916 BIS Hallmark",
+    "price":"₹97,200",
+    "making":"₹2,800",
+    "desc":"Traditional gold payal/anklet with hanging bells. Auspicious sound and beautiful design for brides and festivals. The ghungroo bells produce a melodious sound with every step.",
+    "features":[
+        "Ghungroo Bells",
+        "Traditional Payal",
+        "22 Karat Gold",
+        "Bridal Wear",
+        "BIS Hallmark"
+    ]
+},
+{
+    "id":"g16",
+    "name":"Choker Necklace Meenakari",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Necklace",
+    "badge":"Hot",
+    "weight":"24.5g",
+    "karat":"22K",
+    "purity":"916 BIS Hallmark",
+    "price":"₹1,53,600",
+    "making":"₹5,000",
+    "desc":"Stunning choker necklace with blue and red meenakari enamel work. Bridal favourite across Maharashtra. The vibrant colours are fired into the gold using traditional kiln techniques.",
+    "features":[
+        "Meenakari Enamel",
+        "Choker Style",
+        "Bridal Favourite",
+        "22 Karat Gold",
+        "BIS Hallmark"
+    ]
+},
+{
+    "id":"g17",
+    "name":"Mangalsutra 18\"",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Necklace",
+    "badge":"Bestseller",
+    "weight":"8.5g",
+    "karat":"22K",
+    "purity":"916 BIS Hallmark",
+    "price":"₹53,300",
+    "making":"₹1,600",
+    "desc":"Traditional mangalsutra with black bead chain and gold pendant. Essential bridal jewellery symbolising marital status and the sacred bond between husband and wife.",
+    "features":[
+        "Black Bead Chain",
+        "Gold Pendant",
+        "18\" Length",
+        "22 Karat Gold",
+        "Traditional Design"
+    ]
+},
+{
+    "id":"g18",
+    "name":"Navratna Finger Ring",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Ring",
+    "badge":"",
+    "weight":"6.2g",
+    "karat":"22K",
+    "purity":"916 BIS Hallmark",
+    "price":"₹38,900",
+    "making":"₹1,500",
+    "desc":"Nine gemstone navratna ring for astrological benefits. Includes ruby, pearl, coral, emerald, yellow sapphire, blue sapphire, diamond, cat's eye, hessonite — each representing a planet.",
+    "features":[
+        "9 Gemstones",
+        "Astrological Benefits",
+        "22 Karat Gold",
+        "BIS Hallmark",
+        "Planetary Representation"
+    ]
+},
+{
+    "id":"g19",
+    "name":"Chandbali Earrings",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Earring",
+    "badge":"New",
+    "weight":"11.5g",
+    "karat":"22K",
+    "purity":"916 BIS Hallmark",
+    "price":"₹72,100",
+    "making":"₹2,800",
+    "desc":"Traditional chandbali (moon-shaped) earrings with pearl drops. Stunning for weddings and receptions. The crescent moon shape is embellished with delicate filigree and hanging pearl drops.",
+    "features":[
+        "Moon (Chand) Shape",
+        "Pearl Drops",
+        "Filigree Work",
+        "22 Karat Gold",
+        "BIS Hallmark"
+    ]
+},
+{
+    "id":"g20",
+    "name":"Gold Nose Ring (Nath)",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Earring",
+    "badge":"",
+    "weight":"2.5g",
+    "karat":"22K",
+    "purity":"916 BIS Hallmark",
+    "price":"₹15,700",
+    "making":"₹700",
+    "desc":"Elegant bridal nath with pearl and ruby accents. Traditional Maharashtrian bridal jewellery that adds a touch of regal grace to the bride's look.",
+    "features":[
+        "Pearl & Ruby Accents",
+        "Maharashtrian Style",
+        "Bridal Nath",
+        "22 Karat Gold",
+        "BIS Hallmark"
+    ]
+},
+{
+    "id":"g21",
+    "name":"Coin Necklace Set",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Necklace",
+    "badge":"",
+    "weight":"30.0g",
+    "karat":"22K",
+    "purity":"916 BIS Hallmark",
+    "price":"₹1,88,000",
+    "making":"₹4,500",
+    "desc":"Multi-layer coin necklace with goddess Lakshmi coins. Symbol of prosperity and traditional craftsmanship.",
+    "features":[
+        "Lakshmi Coin Design",
+        "Multi-Layer",
+        "Symbol of Prosperity",
+        "22 Karat Gold",
+        "BIS Hallmark"
+    ]
+},
+{
+    "id":"g22",
+    "name":"Gokarna Bangle Set (6pcs)",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Bangle",
+    "badge":"Bestseller",
+    "weight":"38.5g",
+    "karat":"22K",
+    "purity":"916 BIS Hallmark",
+    "price":"₹2,41,500",
+    "making":"₹6,000",
+    "desc":"Six-piece gold bangle set in traditional Gokarna style with carved edges. Perfect for festive occasions.",
+    "features":[
+        "Set of 6 Bangles",
+        "Carved Edges",
+        "Gokarna Style",
+        "22 Karat Gold",
+        "BIS Hallmark"
+    ]
+},
+{
+    "id":"g23",
+    "name":"Box Link Bracelet",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Bracelet",
+    "badge":"",
+    "weight":"7.2g",
+    "karat":"22K",
+    "purity":"916 BIS Hallmark",
+    "price":"₹45,100",
+    "making":"₹1,500",
+    "desc":"Sleek box-link bracelet with lobster clasp. Modern minimalist style for professional women.",
+    "features":[
+        "Box Link Pattern",
+        "Lobster Clasp",
+        "Modern Design",
+        "22 Karat Gold",
+        "BIS Hallmark"
+    ]
+},
+{
+    "id":"g24",
+    "name":"Om Pendant 22K",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Pendant",
+    "badge":"",
+    "weight":"4.1g",
+    "karat":"22K",
+    "purity":"916 BIS Hallmark",
+    "price":"₹25,700",
+    "making":"₹950",
+    "desc":"Sacred Om symbol pendant with fine engraving. Spiritual and stylish for everyday devotional wear.",
+    "features":[
+        "Sacred Om Symbol",
+        "Fine Engraving",
+        "22 Karat Gold",
+        "Daily Wear",
+        "BIS Hallmark"
+    ]
+},
+{
+    "id":"g25",
+    "name":"Baby Gold Bangle (Infant)",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Bangle",
+    "badge":"New",
+    "weight":"3.5g",
+    "karat":"22K",
+    "purity":"916 BIS Hallmark",
+    "price":"₹21,900",
+    "making":"₹700",
+    "desc":"Delicate gold bangle for newborns and infants. A traditional gifting choice for baby naming ceremonies.",
+    "features":[
+        "Infant Size",
+        "Delicate Design",
+        "22 Karat Gold",
+        "Baby Ceremony Gift",
+        "BIS Hallmark"
+    ]
+},
+{
+    "id":"g26",
+    "name":"Lotus Stud Earrings",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Earring",
+    "badge":"",
+    "weight":"2.8g",
+    "karat":"22K",
+    "purity":"916 BIS Hallmark",
+    "price":"₹17,600",
+    "making":"₹700",
+    "desc":"Delicate lotus flower stud earrings. Simple, elegant and perfect for everyday wear.",
+    "features":[
+        "Lotus Flower Design",
+        "Stud Style",
+        "22 Karat Gold",
+        "Everyday Wear",
+        "BIS Hallmark"
+    ]
+},
+{
+    "id":"g27",
+    "name":"Kali Haar Necklace",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Necklace",
+    "badge":"",
+    "weight":"26.5g",
+    "karat":"22K",
+    "purity":"916 BIS Hallmark",
+    "price":"₹1,66,100",
+    "making":"₹4,000",
+    "desc":"Long kali (black bead) haar with gold caps and pendant. Traditional Maharashtrian jewellery staple.",
+    "features":[
+        "Black Bead Haar",
+        "Gold Caps",
+        "Long Style",
+        "22 Karat Gold",
+        "BIS Hallmark"
+    ]
+},
+{
+    "id":"g28",
+    "name":"Designer Toe Rings (Pair)",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Ring",
+    "badge":"",
+    "weight":"2.0g",
+    "karat":"22K",
+    "purity":"916 BIS Hallmark",
+    "price":"₹12,500",
+    "making":"₹500",
+    "desc":"Traditional toe rings (bichhiya) with floral design. Auspicious for married women and brides.",
+    "features":[
+        "Floral Design",
+        "Pair of 2",
+        "Bichhiya Style",
+        "22 Karat Gold",
+        "BIS Hallmark"
+    ]
+},
+{
+    "id":"g29",
+    "name":"Gold Tikka Maang",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Necklace",
+    "badge":"Hot",
+    "weight":"7.5g",
+    "karat":"22K",
+    "purity":"916 BIS Hallmark",
+    "price":"₹47,000",
+    "making":"₹1,800",
+    "desc":"Stunning gold maang tikka with peacock motif and hanging pearls. Ideal bridal head jewellery.",
+    "features":[
+        "Peacock Motif",
+        "Hanging Pearls",
+        "Maang Tikka",
+        "22 Karat Gold",
+        "BIS Hallmark"
+    ]
+},
+{
+    "id":"g30",
+    "name":"Curb Link Chain 20\"",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Chain",
+    "badge":"",
+    "weight":"7.8g",
+    "karat":"22K",
+    "purity":"916 BIS Hallmark",
+    "price":"₹48,900",
+    "making":"₹1,300",
+    "desc":"Heavy curb link chain with excellent lustre. Suitable for men and women who love bold jewellery.",
+    "features":[
+        "Curb Link Pattern",
+        "20\" Length",
+        "Bold Style",
+        "22 Karat Gold",
+        "BIS Hallmark"
+    ]
+},
+{
+    "id":"g31",
+    "name":"Hoop Bali Earrings",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Earring",
+    "badge":"",
+    "weight":"5.5g",
+    "karat":"22K",
+    "purity":"916 BIS Hallmark",
+    "price":"₹34,500",
+    "making":"₹1,200",
+    "desc":"Classic gold hoop bali earrings with click closure. Versatile and comfortable for daily wear.",
+    "features":[
+        "Hoop Design",
+        "Click Closure",
+        "Daily Wear",
+        "22 Karat Gold",
+        "BIS Hallmark"
+    ]
+},
+{
+    "id":"g32",
+    "name":"Bridal Haath Phool",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Bracelet",
+    "badge":"Hot",
+    "weight":"18.5g",
+    "karat":"22K",
+    "purity":"916 BIS Hallmark",
+    "price":"₹1,16,000",
+    "making":"₹3,500",
+    "desc":"Traditional haath phool (hand flower bracelet) with ring and chain. Essential bridal accessory for henna ceremonies.",
+    "features":[
+        "Ring + Chain Design",
+        "Haath Phool Style",
+        "Bridal Accessory",
+        "22 Karat Gold",
+        "BIS Hallmark"
+    ]
+},
+{
+    "id":"g33",
+    "name":"Gold Mathapatti",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Necklace",
+    "badge":"New",
+    "weight":"22.0g",
+    "karat":"22K",
+    "purity":"916 BIS Hallmark",
+    "price":"₹1,37,800",
+    "making":"₹4,200",
+    "desc":"Elaborate bridal mathapatti (forehead ornament) with floral chains. Unique Maharashtrian bridal tradition.",
+    "features":[
+        "Mathapatti Design",
+        "Floral Chains",
+        "Maharashtrian Bridal",
+        "22 Karat Gold",
+        "BIS Hallmark"
+    ]
+},
+{
+    "id":"g34",
+    "name":"Antique Jhumki Drop",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Earring",
+    "badge":"Bestseller",
+    "weight":"10.5g",
+    "karat":"22K",
+    "purity":"916 BIS Hallmark",
+    "price":"₹65,800",
+    "making":"₹2,500",
+    "desc":"Antique-finish jhumki with ruby and emerald accents. Heritage craftsmanship for contemporary brides.",
+    "features":[
+        "Antique Finish",
+        "Ruby & Emerald Accents",
+        "Heritage Design",
+        "22 Karat Gold",
+        "BIS Hallmark"
+    ]
+},
+{
+    "id":"g35",
+    "name":"Diamond Bar Ring",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Ring",
+    "badge":"",
+    "weight":"3.5g",
+    "karat":"18K",
+    "purity":"750 Hallmark",
+    "price":"₹21,900",
+    "making":"₹1,000",
+    "desc":"Minimalist gold bar ring — sleek and modern. Stackable with other rings for a trendy look.",
+    "features":[
+        "Bar Design",
+        "Stackable",
+        "Modern Style",
+        "18 Karat Gold",
+        "750 Hallmark"
+    ]
+},
+{
+    "id":"g36",
+    "name":"Polki Set Necklace",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Necklace",
+    "badge":"Hot",
+    "weight":"45.0g",
+    "karat":"22K",
+    "purity":"916 BIS Hallmark",
+    "price":"₹2,82,200",
+    "making":"₹8,000",
+    "desc":"Royal polki diamond uncut necklace set. Mughal-inspired artistry for weddings and grand ceremonies.",
+    "features":[
+        "Polki Diamonds",
+        "Uncut Stones",
+        "Mughal Design",
+        "22 Karat Gold",
+        "BIS Hallmark"
+    ]
+},
+{
+    "id":"g37",
+    "name":"Lakshmi Coin Pendant",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Pendant",
+    "badge":"",
+    "weight":"5.0g",
+    "karat":"22K",
+    "purity":"916 BIS Hallmark",
+    "price":"₹31,300",
+    "making":"₹1,100",
+    "desc":"Embossed Lakshmi coin pendant — auspicious and elegant for daily wear and gifting.",
+    "features":[
+        "Lakshmi Embossed",
+        "Coin Shape",
+        "Daily Wear",
+        "22 Karat Gold",
+        "BIS Hallmark"
+    ]
+},
+{
+    "id":"g38",
+    "name":"Broad Herringbone Chain",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Chain",
+    "badge":"New",
+    "weight":"12.0g",
+    "karat":"22K",
+    "purity":"916 BIS Hallmark",
+    "price":"₹75,200",
+    "making":"₹2,000",
+    "desc":"Flat herringbone chain with silky smooth texture. A statement piece for confident women.",
+    "features":[
+        "Herringbone Pattern",
+        "Flat Design",
+        "Statement Piece",
+        "22 Karat Gold",
+        "BIS Hallmark"
+    ]
+},
+{
+    "id":"g39",
+    "name":"Gold Anklet with Ghungroo",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Anklet",
+    "badge":"Bestseller",
+    "weight":"20.0g",
+    "karat":"22K",
+    "purity":"916 BIS Hallmark",
+    "price":"₹1,25,400",
+    "making":"₹3,500",
+    "desc":"Ornate gold anklet with ghungroo bells and chain detail. Melodious and mesmerising — a bridal staple.",
+    "features":[
+        "Ghungroo Bells",
+        "Ornate Design",
+        "Bridal Staple",
+        "22 Karat Gold",
+        "BIS Hallmark"
+    ]
+},
+{
+    "id":"g40",
+    "name":"Patta Bracelet Wide",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Bracelet",
+    "badge":"",
+    "weight":"14.5g",
+    "karat":"22K",
+    "purity":"916 BIS Hallmark",
+    "price":"₹90,900",
+    "making":"₹2,800",
+    "desc":"Wide flat patta (plate) bracelet with engraved floral border. A bold statement piece.",
+    "features":[
+        "Wide Plate Design",
+        "Engraved Border",
+        "Bold Style",
+        "22 Karat Gold",
+        "BIS Hallmark"
+    ]
+},
+{
+    "id":"g41",
+    "name":"Tri-Tone Gold Ring",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Ring",
+    "badge":"New",
+    "weight":"5.8g",
+    "karat":"18K",
+    "purity":"750 Hallmark",
+    "price":"₹36,400",
+    "making":"₹1,300",
+    "desc":"Three-tone gold ring combining yellow, white and rose gold in a wave design. Modern and fashionable.",
+    "features":[
+        "Tri-Tone Design",
+        "Yellow + White + Rose",
+        "Wave Pattern",
+        "18 Karat Gold",
+        "750 Hallmark"
+    ]
+},
+{
+    "id":"g42",
+    "name":"Filigree Drop Earrings",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Earring",
+    "badge":"",
+    "weight":"6.5g",
+    "karat":"22K",
+    "purity":"916 BIS Hallmark",
+    "price":"₹40,800",
+    "making":"₹1,800",
+    "desc":"Handcrafted filigree work drop earrings with intricate wire patterns. Showcases goldsmith artistry.",
+    "features":[
+        "Handcrafted Filigree",
+        "Wire Patterns",
+        "Artisan Work",
+        "22 Karat Gold",
+        "BIS Hallmark"
+    ]
+},
+{
+    "id":"g43",
+    "name":"Lotus Pendant Necklace",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Pendant",
+    "badge":"",
+    "weight":"3.8g",
+    "karat":"22K",
+    "purity":"916 BIS Hallmark",
+    "price":"₹23,800",
+    "making":"₹900",
+    "desc":"Blooming lotus pendant — symbol of purity and grace. Beautiful with both ethnic and western attire.",
+    "features":[
+        "Lotus Symbol",
+        "Blooming Design",
+        "Versatile Wear",
+        "22 Karat Gold",
+        "BIS Hallmark"
+    ]
+},
+{
+    "id":"g44",
+    "name":"Italian Wheat Chain 22\"",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Chain",
+    "badge":"",
+    "weight":"8.0g",
+    "karat":"22K",
+    "purity":"916 BIS Hallmark",
+    "price":"₹50,200",
+    "making":"₹1,400",
+    "desc":"Elegant Italian wheat (spiga) chain with smooth texture. Lightweight and suitable for pendants.",
+    "features":[
+        "Wheat Link Pattern",
+        "22\" Length",
+        "Italian Style",
+        "22 Karat Gold",
+        "BIS Hallmark"
+    ]
+},
+{
+    "id":"g45",
+    "name":"Kundan Maang Tikka",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Necklace",
+    "badge":"Hot",
+    "weight":"9.5g",
+    "karat":"22K",
+    "purity":"916 BIS Hallmark",
+    "price":"₹59,600",
+    "making":"₹2,000",
+    "desc":"Kundan set maang tikka with pearl drops. Stunning centrepiece for bridal and festive looks.",
+    "features":[
+        "Kundan Setting",
+        "Pearl Drops",
+        "Maang Tikka",
+        "22 Karat Gold",
+        "BIS Hallmark"
+    ]
+},
+{
+    "id":"g46",
+    "name":"Kids Finger Ring",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Ring",
+    "badge":"New",
+    "weight":"1.5g",
+    "karat":"22K",
+    "purity":"916 BIS Hallmark",
+    "price":"₹9,400",
+    "making":"₹400",
+    "desc":"Cute floral design finger ring for children. Perfect gifting for birthdays and baby ceremonies.",
+    "features":[
+        "Children's Size",
+        "Floral Design",
+        "Safe for Kids",
+        "22 Karat Gold",
+        "BIS Hallmark"
+    ]
+},
+{
+    "id":"g47",
+    "name":"Gold Ear Chain Sahara",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Earring",
+    "badge":"",
+    "weight":"4.2g",
+    "karat":"22K",
+    "purity":"916 BIS Hallmark",
+    "price":"₹26,300",
+    "making":"₹1,000",
+    "desc":"Delicate ear chain connecting stud to top of ear. Trendy and distinctive Bollywood-inspired look.",
+    "features":[
+        "Ear Chain Design",
+        "Stud to Top",
+        "Trendy Style",
+        "22 Karat Gold",
+        "BIS Hallmark"
+    ]
+},
+{
+    "id":"g48",
+    "name":"Bajuband Armlet",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Bracelet",
+    "badge":"Bestseller",
+    "weight":"16.5g",
+    "karat":"22K",
+    "purity":"916 BIS Hallmark",
+    "price":"₹1,03,500",
+    "making":"₹3,200",
+    "desc":"Traditional bajuband (armlet) with adjustable chain. Bridal upper-arm jewellery crafted to perfection.",
+    "features":[
+        "Bajuband Style",
+        "Adjustable Chain",
+        "Upper Arm Wear",
+        "22 Karat Gold",
+        "BIS Hallmark"
+    ]
+},
+{
+    "id":"g49",
+    "name":"Half-Bangle Cuff",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Bangle",
+    "badge":"",
+    "weight":"12.0g",
+    "karat":"22K",
+    "purity":"916 BIS Hallmark",
+    "price":"₹75,200",
+    "making":"₹2,400",
+    "desc":"Open-end cuff bangle with geometric diamond-cut pattern. Contemporary look with traditional gold purity.",
+    "features":[
+        "Open Cuff Design",
+        "Diamond-Cut Pattern",
+        "Contemporary Style",
+        "22 Karat Gold",
+        "BIS Hallmark"
+    ]
+},
+{
+    "id":"g50",
+    "name":"Five Petal Flower Anklet",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Anklet",
+    "badge":"New",
+    "weight":"12.5g",
+    "karat":"22K",
+    "purity":"916 BIS Hallmark",
+    "price":"₹78,400",
+    "making":"₹2,500",
+    "desc":"Delicate flower charm anklet with bell drops. Feminine and elegant for festive occasions and weddings.",
+    "features":[
+        "Flower Charms",
+        "Bell Drops",
+        "Feminine Design",
+        "22 Karat Gold",
+        "BIS Hallmark"
+    ]
+},
 ]
 
 silver_products = [
-  {"id":"s1","name":"Silver Kundan Necklace Set","category":"Necklace","badge":"Bestseller","weight":"62g","purity":"925 Sterling","finish":"Rhodium","price":"₹4,850","making":"₹350","desc":"Stunning silver kundan necklace with earring set. Perfect for festivals and ethnic occasions. The rhodium finish gives a brilliant white-gold appearance while maintaining affordability.","features":["Kundan Setting","Rhodium Finish","Set with Earrings","925 Sterling Silver","Anti-Tarnish"]},
-  {"id":"s2","name":"Oxidised Collar Necklace","category":"Necklace","badge":"New","weight":"48g","purity":"925 Sterling","finish":"Oxidised","price":"₹3,200","making":"₹250","desc":"Bold oxidised silver collar necklace with tribal motifs. Boho-chic style for statement looks.","features":["Oxidised Finish","Collar Style","Tribal Motifs","925 Sterling Silver","Boho Design"]},
-  {"id":"s3","name":"Silver Temple Choker","category":"Necklace","badge":"","weight":"55g","purity":"925 Sterling","finish":"Polished","price":"₹4,200","making":"₹320","desc":"South Indian temple-style choker with Goddess Lakshmi motif. Traditional craftsmanship in fine silver.","features":["Temple Design","Lakshmi Motif","Choker Style","925 Sterling Silver","Polished Finish"]},
-  {"id":"s4","name":"Silver Filigree Ring","category":"Ring","badge":"","weight":"5g","purity":"925 Sterling","finish":"Polished","price":"₹680","making":"₹80","desc":"Delicate filigree-work silver ring with intricate wire patterns. A timeless artisan piece.","features":["Filigree Work","Wire Patterns","Artisan Made","925 Sterling Silver","Polished Finish"]},
-  {"id":"s5","name":"Turquoise Stone Ring","category":"Ring","badge":"Hot","weight":"7g","purity":"925 Sterling","finish":"Oxidised","price":"₹950","making":"₹100","desc":"Natural turquoise cabochon set in 925 silver. Beautiful sky-blue stone ring for boho style lovers.","features":["Natural Turquoise","Cabochon Setting","Oxidised Finish","925 Sterling Silver","Boho Style"]},
-  {"id":"s6","name":"Silver Jhumka Classic","category":"Earring","badge":"Bestseller","weight":"18g","purity":"925 Sterling","finish":"Polished","price":"₹1,450","making":"₹180","desc":"Traditional silver jhumka earrings — a must-have in every Indian woman's jewellery box.","features":["Classic Jhumka","Bell Shape","925 Sterling Silver","Traditional Design","Polished Finish"]},
-  {"id":"s7","name":"Oxidised Chandbali","category":"Earring","badge":"New","weight":"22g","purity":"925 Sterling","finish":"Oxidised","price":"₹1,750","making":"₹200","desc":"Oxidised silver chandbali earrings with turquoise and red coral beads. Festival favourite.","features":["Chandbali Shape","Turquoise & Coral Beads","Oxidised Finish","925 Sterling Silver","Festival Wear"]},
-  {"id":"s8","name":"Silver Bangle Pair Plain","category":"Bangle","badge":"","weight":"50g","purity":"92.5%","finish":"Polished","price":"₹3,800","making":"₹280","desc":"Classic plain silver bangles — timeless simplicity. Anti-tarnish coating for lasting shine.","features":["Plain Design","Anti-Tarnish Coating","925 Silver","Pair of 2","Polished Finish"]},
-  {"id":"s9","name":"Floral Engraved Bangle","category":"Bangle","badge":"Bestseller","weight":"65g","purity":"925 Sterling","finish":"Polished","price":"₹4,950","making":"₹380","desc":"Flower-engraved wide silver bangle with matte interior finish. Elegant for daily or occasional wear.","features":["Floral Engraving","Wide Design","Matte Interior","925 Sterling Silver","Polished Exterior"]},
-  {"id":"s10","name":"Silver Charm Bracelet","category":"Bracelet","badge":"New","weight":"15g","purity":"925 Sterling","finish":"Polished","price":"₹1,850","making":"₹180","desc":"Silver charm bracelet with 8 traditional Indian charms including lotus, peacock and elephant.","features":["8 Indian Charms","Lotus, Peacock, Elephant","925 Sterling Silver","Polished Finish","Lobster Clasp"]},
-  {"id":"s11","name":"Ganesh Silver Pendant","category":"Pendant","badge":"Bestseller","weight":"8g","purity":"925 Sterling","finish":"Polished","price":"₹920","making":"₹90","desc":"Lord Ganesha pendant in 925 silver. Auspicious, detailed and perfect for daily devotional wear.","features":["Lord Ganesha","Detailed Carving","Daily Wear","925 Sterling Silver","Polished Finish"]},
-  {"id":"s12","name":"Star Pendant Silver","category":"Pendant","badge":"","weight":"5g","purity":"925 Sterling","finish":"Polished","price":"₹580","making":"₹70","desc":"Simple five-pointed star pendant. Minimalist design for casual everyday wear.","features":["Star Design","Minimalist","Five Points","925 Sterling Silver","Polished Finish"]},
-  {"id":"s13","name":"Silver Payal (Pair)","category":"Payal","badge":"Bestseller","weight":"40g","purity":"925 Sterling","finish":"Polished","price":"₹3,050","making":"₹250","desc":"Traditional silver payal with ghungroo bells. Melodious and beautiful anklets for all ages.","features":["Ghungroo Bells","Pair of 2","Traditional Design","925 Sterling Silver","Melodious Sound"]},
-  {"id":"s14","name":"Beaded Silver Payal","category":"Payal","badge":"New","weight":"35g","purity":"925 Sterling","finish":"Polished","price":"₹2,650","making":"₹220","desc":"Silver payal with coral and turquoise beads. Tribal-inspired design perfect for festive looks.","features":["Coral & Turquoise Beads","Tribal Design","Pair of 2","925 Sterling Silver","Festive Wear"]},
-  {"id":"s15","name":"Lakshmi Silver Idol (6\")","category":"Idol","badge":"","weight":"250g","purity":"999 Fine Silver","finish":"Polished","price":"₹19,200","making":"₹1,500","desc":"Beautifully crafted seated Goddess Lakshmi idol in fine silver. Ideal for pooja, housewarming and gifting.","features":["Seated Lakshmi","6 Inch Height","999 Fine Silver","Pooja Ready","Gift Box Included"]},
-  {"id":"s16","name":"Silver Kada Pair","category":"Bangle","badge":"Hot","weight":"80g","purity":"925 Sterling","finish":"Polished","price":"₹6,100","making":"₹450","desc":"Heavy silver kadas with carved border. Traditional and sturdy for every day or religious occasions.","features":["Carved Border","Heavy Weight","Pair of 2","925 Sterling Silver","Polished Finish"]},
-  {"id":"s17","name":"Silver Hoop Earrings Large","category":"Earring","badge":"","weight":"10g","purity":"925 Sterling","finish":"Polished","price":"₹800","making":"₹90","desc":"Large classic silver hoop earrings. Effortlessly stylish for both casual and party looks.","features":["Large Hoops","Click Closure","925 Sterling Silver","Versatile Style","Polished Finish"]},
-  {"id":"s18","name":"Ganapati Silver Coin","category":"Idol","badge":"New","weight":"50g","purity":"999 Fine Silver","finish":"Polished","price":"₹3,850","making":"₹300","desc":"999 pure silver Ganesha coin — perfect Dhanteras and Diwali gift for prosperity and blessings.","features":["Ganesha Motif","999 Fine Silver","Diwali Gift","50g Weight","Gift Box Included"]},
-  {"id":"s19","name":"Silver Cuff Bracelet","category":"Bracelet","badge":"Hot","weight":"28g","purity":"925 Sterling","finish":"Oxidised","price":"₹2,150","making":"₹200","desc":"Bold oxidised cuff bracelet with tribal motifs. Statement piece for boho and ethnic style.","features":["Cuff Style","Tribal Motifs","Oxidised Finish","925 Sterling Silver","Statement Piece"]},
-  {"id":"s20","name":"Peacock Pendant Silver","category":"Pendant","badge":"","weight":"10g","purity":"925 Sterling","finish":"Oxidised","price":"₹1,150","making":"₹120","desc":"Detailed peacock pendant with spread feathers and coloured enamel accents. Elegant and artistic.","features":["Peacock Design","Spread Feathers","Enamel Accents","925 Sterling Silver","Oxidised Finish"]},
-  {"id":"s21","name":"Silver Navratan Necklace","category":"Necklace","badge":"Bestseller","weight":"58g","purity":"925 Sterling","finish":"Polished","price":"₹5,200","making":"₹400","desc":"Nine-gemstone silver necklace combining traditional healing stones in elegant silver setting.","features":["9 Gemstones","Healing Stones","925 Sterling Silver","Traditional Design","Polished Finish"]},
-  {"id":"s22","name":"Silver Toe Rings Pair","category":"Ring","badge":"","weight":"4g","purity":"925 Sterling","finish":"Polished","price":"₹310","making":"₹50","desc":"Classic silver toe rings (bichhiya) in floral design. Auspicious for married women.","features":["Floral Design","Pair of 2","Bichhiya Style","925 Sterling Silver","Auspicious"]},
-  {"id":"s23","name":"Shiva Linga Silver Idol","category":"Idol","badge":"","weight":"150g","purity":"999 Fine Silver","finish":"Polished","price":"₹11,550","making":"₹900","desc":"Sacred Shiva Linga in fine 999 silver. A powerful pooja item for devotees of Lord Shiva.","features":["Shiva Linga","999 Fine Silver","Sacred Item","Pooja Ready","Gift Wrapped"]},
-  {"id":"s24","name":"Silver Mangalsutra Pendant","category":"Pendant","badge":"New","weight":"9g","purity":"925 Sterling","finish":"Polished","price":"₹1,040","making":"₹110","desc":"Modern silver mangalsutra pendant — a contemporary take on a beloved traditional ornament.","features":["Modern Design","Mangalsutra Style","925 Sterling Silver","Polished Finish","Contemporary"]},
-  {"id":"s25","name":"Silver Pooja Thali Set","category":"Idol","badge":"Hot","weight":"400g","purity":"999 Fine Silver","finish":"Polished","price":"₹30,800","making":"₹2,500","desc":"Complete silver pooja thali set with diya, kalash and incense holder. Premium gifting choice.","features":["Complete Thali Set","Diya + Kalash","999 Fine Silver","Premium Gift","Box Included"]},
-  {"id":"s26","name":"Silver Stud Earrings Ball","category":"Earring","badge":"","weight":"3g","purity":"925 Sterling","finish":"Polished","price":"₹240","making":"₹40","desc":"Simple round ball stud earrings. Everyday essential that goes with any outfit.","features":["Ball Studs","Push Back","925 Sterling Silver","Everyday Wear","Polished Finish"]},
-  {"id":"s27","name":"Oxidised Jhumka Cluster","category":"Earring","badge":"Bestseller","weight":"25g","purity":"925 Sterling","finish":"Oxidised","price":"₹1,950","making":"₹220","desc":"Large cluster oxidised jhumka with multicolour bead drops. Bold statement ethnic earrings.","features":["Cluster Design","Multicolour Beads","Oxidised Finish","925 Sterling Silver","Statement Earrings"]},
-  {"id":"s28","name":"Silver Chain 20\" Thin","category":"Necklace","badge":"","weight":"8g","purity":"925 Sterling","finish":"Polished","price":"₹620","making":"₹70","desc":"Thin delicate silver chain — ideal for pendants and layering. Lightweight for daily wear.","features":["Thin Design","20\" Length","Pendant Ready","925 Sterling Silver","Layering Chain"]},
-  {"id":"s29","name":"Silver Adjustable Ring","category":"Ring","badge":"New","weight":"6g","purity":"925 Sterling","finish":"Polished","price":"₹810","making":"₹85","desc":"Open-band adjustable silver ring — fits all sizes. Ideal for gifting without knowing ring size.","features":["Adjustable Size","Open Band","Fits All","925 Sterling Silver","Gift Friendly"]},
-  {"id":"s30","name":"Silver Coin Laxmi-Ganesh","category":"Idol","badge":"Bestseller","weight":"100g","purity":"999 Fine Silver","finish":"Polished","price":"₹7,700","making":"₹600","desc":"Combined Laxmi-Ganesh silver coin — the ultimate Diwali gift for businesses and families.","features":["Laxmi-Ganesh","Combined Coin","999 Fine Silver","Diwali Gift","100g Weight"]},
-  {"id":"s31","name":"Silver Ear Cuff Set","category":"Earring","badge":"","weight":"6g","purity":"925 Sterling","finish":"Polished","price":"₹480","making":"₹60","desc":"Trendy ear cuff set — no piercing needed. Modern minimalist design for fashion-forward buyers.","features":["No Piercing Needed","Ear Cuff","Modern Style","925 Sterling Silver","Set of 2"]},
-  {"id":"s32","name":"Silver Oxidised Nath","category":"Necklace","badge":"","weight":"12g","purity":"925 Sterling","finish":"Oxidised","price":"₹950","making":"₹100","desc":"Traditional oxidised silver nose ring (nath) with chain. Stunning for brides and festive looks.","features":["Nath Style","With Chain","Oxidised Finish","925 Sterling Silver","Bridal Wear"]},
-  {"id":"s33","name":"Silver Bracelet Kids","category":"Bracelet","badge":"New","weight":"8g","purity":"925 Sterling","finish":"Polished","price":"₹620","making":"₹70","desc":"Cute hearts-and-flowers silver bracelet for children. Perfect baby shower or birthday gift.","features":["Kids Size","Hearts & Flowers","925 Sterling Silver","Gift Ready","Safe Design"]},
-  {"id":"s34","name":"Balaji Silver Idol (4\")","category":"Idol","badge":"","weight":"180g","purity":"999 Fine Silver","finish":"Polished","price":"₹13,860","making":"₹1,100","desc":"Lord Venkateswara (Balaji) idol in fine silver. Sacred idol for home mandir and gifting.","features":["Balaji / Venkateswara","4 Inch Height","999 Fine Silver","Mandir Ready","Gift Box"]},
-  {"id":"s35","name":"Silver Om Pendant","category":"Pendant","badge":"","weight":"7g","purity":"925 Sterling","finish":"Polished","price":"₹810","making":"₹85","desc":"Sacred Om pendant in 925 silver with polished shine. Wearable spirituality for daily use.","features":["Om Symbol","Sacred Design","925 Sterling Silver","Daily Wear","Polished Finish"]},
-  {"id":"s36","name":"Silver Maang Tikka","category":"Necklace","badge":"Hot","weight":"14g","purity":"925 Sterling","finish":"Polished","price":"₹1,080","making":"₹120","desc":"Classic silver maang tikka with drop pearl. Completes bridal and festive looks beautifully.","features":["Pearl Drop","Maang Tikka","925 Sterling Silver","Bridal Wear","Polished Finish"]},
-  {"id":"s37","name":"Silver Banana Bangle","category":"Bangle","badge":"","weight":"45g","purity":"925 Sterling","finish":"Polished","price":"₹3,465","making":"₹280","desc":"Traditional banana (kela) shaped bangle — a beloved style in Maharashtra and Karnataka.","features":["Banana Shape","Traditional Design","925 Sterling Silver","Maharashtra Style","Polished Finish"]},
-  {"id":"s38","name":"Silver Snake Chain 24\"","category":"Necklace","badge":"New","weight":"12g","purity":"925 Sterling","finish":"Polished","price":"₹925","making":"₹95","desc":"Smooth snake chain in 925 silver. A sleek and versatile chain for pendants and solo wear.","features":["Snake Pattern","24\" Length","925 Sterling Silver","Pendant Ready","Smooth Texture"]},
-  {"id":"s39","name":"Silver Shankh Figurine","category":"Idol","badge":"","weight":"120g","purity":"999 Fine Silver","finish":"Polished","price":"₹9,240","making":"₹750","desc":"Sacred conch shell (shankh) in fine silver. Used in daily puja rituals and as decor.","features":["Shankh / Conch Shell","999 Fine Silver","Puja Item","Decorative","Gift Ready"]},
-  {"id":"s40","name":"Oxidised Hasli Necklace","category":"Necklace","badge":"Bestseller","weight":"70g","purity":"925 Sterling","finish":"Oxidised","price":"₹5,400","making":"₹420","desc":"Bold oxidised hasli (rigid collar) necklace with intricate tribal detailing. A head-turner at any event.","features":["Hasli Design","Rigid Collar","Oxidised Finish","925 Sterling Silver","Tribal Detailing"]},
-  {"id":"s41","name":"Silver Infinity Ring","category":"Ring","badge":"","weight":"5g","purity":"925 Sterling","finish":"Polished","price":"₹680","making":"₹75","desc":"Classic infinity symbol ring in polished silver. Symbolises eternal love — a perfect gift.","features":["Infinity Symbol","Eternal Love","925 Sterling Silver","Gift Perfect","Polished Finish"]},
-  {"id":"s42","name":"Meenakari Jhumka Silver","category":"Earring","badge":"Hot","weight":"20g","purity":"925 Sterling","finish":"Meenakari","price":"₹1,580","making":"₹170","desc":"Silver jhumka with vibrant blue and red meenakari enamel. Colourful ethnic jewellery at its best.","features":["Meenakari Enamel","Blue & Red Colours","Jhumka Style","925 Sterling Silver","Ethnic Design"]},
-  {"id":"s43","name":"Silver Lakshmi Coin Pendant","category":"Pendant","badge":"Bestseller","weight":"12g","purity":"925 Sterling","finish":"Polished","price":"₹1,390","making":"₹130","desc":"Embossed Goddess Lakshmi coin pendant in 925 silver. Auspicious and elegant for daily wear.","features":["Lakshmi Motif","Coin Shape","925 Sterling Silver","Daily Wear","Auspicious"]},
-  {"id":"s44","name":"Silver Haath Phool","category":"Bracelet","badge":"New","weight":"32g","purity":"925 Sterling","finish":"Polished","price":"₹2,465","making":"₹230","desc":"Silver haath phool (hand flower) with ring and bracelet. Traditional bridal hand jewellery.","features":["Haath Phool Style","Ring + Bracelet","925 Sterling Silver","Bridal Wear","Traditional"]},
-  {"id":"s45","name":"Silver Ganesh Coin 50g","category":"Idol","badge":"","weight":"50g","purity":"999 Fine Silver","finish":"Polished","price":"₹3,850","making":"₹300","desc":"50g Ganesh silver coin. Cherished gifting item for Ganesh Chaturthi, Diwali and business openings.","features":["Ganesh Motif","50g Weight","999 Fine Silver","Festival Gift","Gift Wrapped"]},
-  {"id":"s46","name":"Silver Bib Statement Necklace","category":"Necklace","badge":"","weight":"72g","purity":"925 Sterling","finish":"Oxidised","price":"₹5,550","making":"₹430","desc":"Wide bib statement necklace with layered oxidised chains and stone accents. Bold and dramatic.","features":["Bib Design","Layered Chains","Stone Accents","925 Sterling Silver","Statement Piece"]},
-  {"id":"s47","name":"Silver Drop Pearl Earrings","category":"Earring","badge":"","weight":"8g","purity":"925 Sterling","finish":"Polished","price":"₹640","making":"₹70","desc":"Simple fresh-water pearl drop earrings in silver. Elegant for office wear and casual occasions.","features":["Fresh-Water Pearl","Drop Style","925 Sterling Silver","Office Wear","Polished Finish"]},
-  {"id":"s48","name":"Silver Elephant Charm Payal","category":"Payal","badge":"Hot","weight":"42g","purity":"925 Sterling","finish":"Oxidised","price":"₹3,235","making":"₹260","desc":"Unique payal with elephant charms and oxidised finish. Bohemian style for festivals and beach occasions.","features":["Elephant Charms","Oxidised Finish","925 Sterling Silver","Boho Style","Festival Wear"]},
-  {"id":"s49","name":"Silver Gemstone Bracelet","category":"Bracelet","badge":"New","weight":"18g","purity":"925 Sterling","finish":"Polished","price":"₹1,390","making":"₹140","desc":"Silver bracelet with alternating amethyst and garnet stones. Colourful and chic for any occasion.","features":["Amethyst & Garnet","Alternating Stones","925 Sterling Silver","Polished Finish","Colourful Design"]},
-  {"id":"s50","name":"Silver Saraswati Idol (5\")","category":"Idol","badge":"Bestseller","weight":"200g","purity":"999 Fine Silver","finish":"Polished","price":"₹15,400","making":"₹1,200","desc":"Goddess Saraswati idol in fine silver with veena. Gifted on Saraswati Puja, Vasant Panchami and housewarmings.","features":["Goddess Saraswati","With Veena","5 Inch Height","999 Fine Silver","Gift Box Included"]},
+{
+    "id":"s1",
+    "name":"Silver Kundan Necklace Set",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Necklace",
+    "badge":"Bestseller",
+    "weight":"62g",
+    "purity":"925 Sterling",
+    "finish":"Rhodium",
+    "price":"₹4,850",
+    "making":"₹350",
+    "desc":"Stunning silver kundan necklace with earring set. Perfect for festivals and ethnic occasions. The rhodium finish gives a brilliant white-gold appearance while maintaining affordability.",
+    "features":[
+        "Kundan Setting",
+        "Rhodium Finish",
+        "Set with Earrings",
+        "925 Sterling Silver",
+        "Anti-Tarnish"
+    ]
+},
+{
+    "id":"s2",
+    "name":"Oxidised Collar Necklace",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Necklace",
+    "badge":"New",
+    "weight":"48g",
+    "purity":"925 Sterling",
+    "finish":"Oxidised",
+    "price":"₹3,200",
+    "making":"₹250",
+    "desc":"Bold oxidised silver collar necklace with tribal motifs. Boho-chic style for statement looks.",
+    "features":[
+        "Oxidised Finish",
+        "Collar Style",
+        "Tribal Motifs",
+        "925 Sterling Silver",
+        "Boho Design"
+    ]
+},
+{
+    "id":"s3",
+    "name":"Silver Temple Choker",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Necklace",
+    "badge":"",
+    "weight":"55g",
+    "purity":"925 Sterling",
+    "finish":"Polished",
+    "price":"₹4,200",
+    "making":"₹320",
+    "desc":"South Indian temple-style choker with Goddess Lakshmi motif. Traditional craftsmanship in fine silver.",
+    "features":[
+        "Temple Design",
+        "Lakshmi Motif",
+        "Choker Style",
+        "925 Sterling Silver",
+        "Polished Finish"
+    ]
+},
+{
+    "id":"s4",
+    "name":"Silver Filigree Ring",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Ring",
+    "badge":"",
+    "weight":"5g",
+    "purity":"925 Sterling",
+    "finish":"Polished",
+    "price":"₹680",
+    "making":"₹80",
+    "desc":"Delicate filigree-work silver ring with intricate wire patterns. A timeless artisan piece.",
+    "features":[
+        "Filigree Work",
+        "Wire Patterns",
+        "Artisan Made",
+        "925 Sterling Silver",
+        "Polished Finish"
+    ]
+},
+{
+    "id":"s5",
+    "name":"Turquoise Stone Ring",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Ring",
+    "badge":"Hot",
+    "weight":"7g",
+    "purity":"925 Sterling",
+    "finish":"Oxidised",
+    "price":"₹950",
+    "making":"₹100",
+    "desc":"Natural turquoise cabochon set in 925 silver. Beautiful sky-blue stone ring for boho style lovers.",
+    "features":[
+        "Natural Turquoise",
+        "Cabochon Setting",
+        "Oxidised Finish",
+        "925 Sterling Silver",
+        "Boho Style"
+    ]
+},
+{
+    "id":"s6",
+    "name":"Silver Jhumka Classic",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Earring",
+    "badge":"Bestseller",
+    "weight":"18g",
+    "purity":"925 Sterling",
+    "finish":"Polished",
+    "price":"₹1,450",
+    "making":"₹180",
+    "desc":"Traditional silver jhumka earrings — a must-have in every Indian woman's jewellery box.",
+    "features":[
+        "Classic Jhumka",
+        "Bell Shape",
+        "925 Sterling Silver",
+        "Traditional Design",
+        "Polished Finish"
+    ]
+},
+{
+    "id":"s7",
+    "name":"Oxidised Chandbali",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Earring",
+    "badge":"New",
+    "weight":"22g",
+    "purity":"925 Sterling",
+    "finish":"Oxidised",
+    "price":"₹1,750",
+    "making":"₹200",
+    "desc":"Oxidised silver chandbali earrings with turquoise and red coral beads. Festival favourite.",
+    "features":[
+        "Chandbali Shape",
+        "Turquoise & Coral Beads",
+        "Oxidised Finish",
+        "925 Sterling Silver",
+        "Festival Wear"
+    ]
+},
+{
+    "id":"s8",
+    "name":"Silver Bangle Pair Plain",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Bangle",
+    "badge":"",
+    "weight":"50g",
+    "purity":"92.5%",
+    "finish":"Polished",
+    "price":"₹3,800",
+    "making":"₹280",
+    "desc":"Classic plain silver bangles — timeless simplicity. Anti-tarnish coating for lasting shine.",
+    "features":[
+        "Plain Design",
+        "Anti-Tarnish Coating",
+        "925 Silver",
+        "Pair of 2",
+        "Polished Finish"
+    ]
+},
+{
+    "id":"s9",
+    "name":"Floral Engraved Bangle",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Bangle",
+    "badge":"Bestseller",
+    "weight":"65g",
+    "purity":"925 Sterling",
+    "finish":"Polished",
+    "price":"₹4,950",
+    "making":"₹380",
+    "desc":"Flower-engraved wide silver bangle with matte interior finish. Elegant for daily or occasional wear.",
+    "features":[
+        "Floral Engraving",
+        "Wide Design",
+        "Matte Interior",
+        "925 Sterling Silver",
+        "Polished Exterior"
+    ]
+},
+{
+    "id":"s10",
+    "name":"Silver Charm Bracelet",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Bracelet",
+    "badge":"New",
+    "weight":"15g",
+    "purity":"925 Sterling",
+    "finish":"Polished",
+    "price":"₹1,850",
+    "making":"₹180",
+    "desc":"Silver charm bracelet with 8 traditional Indian charms including lotus, peacock and elephant.",
+    "features":[
+        "8 Indian Charms",
+        "Lotus, Peacock, Elephant",
+        "925 Sterling Silver",
+        "Polished Finish",
+        "Lobster Clasp"
+    ]
+},
+{
+    "id":"s11",
+    "name":"Ganesh Silver Pendant",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Pendant",
+    "badge":"Bestseller",
+    "weight":"8g",
+    "purity":"925 Sterling",
+    "finish":"Polished",
+    "price":"₹920",
+    "making":"₹90",
+    "desc":"Lord Ganesha pendant in 925 silver. Auspicious, detailed and perfect for daily devotional wear.",
+    "features":[
+        "Lord Ganesha",
+        "Detailed Carving",
+        "Daily Wear",
+        "925 Sterling Silver",
+        "Polished Finish"
+    ]
+},
+{
+    "id":"s12",
+    "name":"Star Pendant Silver",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Pendant",
+    "badge":"",
+    "weight":"5g",
+    "purity":"925 Sterling",
+    "finish":"Polished",
+    "price":"₹580",
+    "making":"₹70",
+    "desc":"Simple five-pointed star pendant. Minimalist design for casual everyday wear.",
+    "features":[
+        "Star Design",
+        "Minimalist",
+        "Five Points",
+        "925 Sterling Silver",
+        "Polished Finish"
+    ]
+},
+{
+    "id":"s13",
+    "name":"Silver Payal (Pair)",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Payal",
+    "badge":"Bestseller",
+    "weight":"40g",
+    "purity":"925 Sterling",
+    "finish":"Polished",
+    "price":"₹3,050",
+    "making":"₹250",
+    "desc":"Traditional silver payal with ghungroo bells. Melodious and beautiful anklets for all ages.",
+    "features":[
+        "Ghungroo Bells",
+        "Pair of 2",
+        "Traditional Design",
+        "925 Sterling Silver",
+        "Melodious Sound"
+    ]
+},
+{
+    "id":"s14",
+    "name":"Beaded Silver Payal",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Payal",
+    "badge":"New",
+    "weight":"35g",
+    "purity":"925 Sterling",
+    "finish":"Polished",
+    "price":"₹2,650",
+    "making":"₹220",
+    "desc":"Silver payal with coral and turquoise beads. Tribal-inspired design perfect for festive looks.",
+    "features":[
+        "Coral & Turquoise Beads",
+        "Tribal Design",
+        "Pair of 2",
+        "925 Sterling Silver",
+        "Festive Wear"
+    ]
+},
+{
+    "id":"s15",
+    "name":"Lakshmi Silver Idol (6\")",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Idol",
+    "badge":"",
+    "weight":"250g",
+    "purity":"999 Fine Silver",
+    "finish":"Polished",
+    "price":"₹19,200",
+    "making":"₹1,500",
+    "desc":"Beautifully crafted seated Goddess Lakshmi idol in fine silver. Ideal for pooja, housewarming and gifting.",
+    "features":[
+        "Seated Lakshmi",
+        "6 Inch Height",
+        "999 Fine Silver",
+        "Pooja Ready",
+        "Gift Box Included"
+    ]
+},
+{
+    "id":"s16",
+    "name":"Silver Kada Pair",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Bangle",
+    "badge":"Hot",
+    "weight":"80g",
+    "purity":"925 Sterling",
+    "finish":"Polished",
+    "price":"₹6,100",
+    "making":"₹450",
+    "desc":"Heavy silver kadas with carved border. Traditional and sturdy for every day or religious occasions.",
+    "features":[
+        "Carved Border",
+        "Heavy Weight",
+        "Pair of 2",
+        "925 Sterling Silver",
+        "Polished Finish"
+    ]
+},
+{
+    "id":"s17",
+    "name":"Silver Hoop Earrings Large",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Earring",
+    "badge":"",
+    "weight":"10g",
+    "purity":"925 Sterling",
+    "finish":"Polished",
+    "price":"₹800",
+    "making":"₹90",
+    "desc":"Large classic silver hoop earrings. Effortlessly stylish for both casual and party looks.",
+    "features":[
+        "Large Hoops",
+        "Click Closure",
+        "925 Sterling Silver",
+        "Versatile Style",
+        "Polished Finish"
+    ]
+},
+{
+    "id":"s18",
+    "name":"Ganapati Silver Coin",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Idol",
+    "badge":"New",
+    "weight":"50g",
+    "purity":"999 Fine Silver",
+    "finish":"Polished",
+    "price":"₹3,850",
+    "making":"₹300",
+    "desc":"999 pure silver Ganesha coin — perfect Dhanteras and Diwali gift for prosperity and blessings.",
+    "features":[
+        "Ganesha Motif",
+        "999 Fine Silver",
+        "Diwali Gift",
+        "50g Weight",
+        "Gift Box Included"
+    ]
+},
+{
+    "id":"s19",
+    "name":"Silver Cuff Bracelet",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Bracelet",
+    "badge":"Hot",
+    "weight":"28g",
+    "purity":"925 Sterling",
+    "finish":"Oxidised",
+    "price":"₹2,150",
+    "making":"₹200",
+    "desc":"Bold oxidised cuff bracelet with tribal motifs. Statement piece for boho and ethnic style.",
+    "features":[
+        "Cuff Style",
+        "Tribal Motifs",
+        "Oxidised Finish",
+        "925 Sterling Silver",
+        "Statement Piece"
+    ]
+},
+{
+    "id":"s20",
+    "name":"Peacock Pendant Silver",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Pendant",
+    "badge":"",
+    "weight":"10g",
+    "purity":"925 Sterling",
+    "finish":"Oxidised",
+    "price":"₹1,150",
+    "making":"₹120",
+    "desc":"Detailed peacock pendant with spread feathers and coloured enamel accents. Elegant and artistic.",
+    "features":[
+        "Peacock Design",
+        "Spread Feathers",
+        "Enamel Accents",
+        "925 Sterling Silver",
+        "Oxidised Finish"
+    ]
+},
+{
+    "id":"s21",
+    "name":"Silver Navratan Necklace",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Necklace",
+    "badge":"Bestseller",
+    "weight":"58g",
+    "purity":"925 Sterling",
+    "finish":"Polished",
+    "price":"₹5,200",
+    "making":"₹400",
+    "desc":"Nine-gemstone silver necklace combining traditional healing stones in elegant silver setting.",
+    "features":[
+        "9 Gemstones",
+        "Healing Stones",
+        "925 Sterling Silver",
+        "Traditional Design",
+        "Polished Finish"
+    ]
+},
+{
+    "id":"s22",
+    "name":"Silver Toe Rings Pair",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Ring",
+    "badge":"",
+    "weight":"4g",
+    "purity":"925 Sterling",
+    "finish":"Polished",
+    "price":"₹310",
+    "making":"₹50",
+    "desc":"Classic silver toe rings (bichhiya) in floral design. Auspicious for married women.",
+    "features":[
+        "Floral Design",
+        "Pair of 2",
+        "Bichhiya Style",
+        "925 Sterling Silver",
+        "Auspicious"
+    ]
+},
+{
+    "id":"s23",
+    "name":"Shiva Linga Silver Idol",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Idol",
+    "badge":"",
+    "weight":"150g",
+    "purity":"999 Fine Silver",
+    "finish":"Polished",
+    "price":"₹11,550",
+    "making":"₹900",
+    "desc":"Sacred Shiva Linga in fine 999 silver. A powerful pooja item for devotees of Lord Shiva.",
+    "features":[
+        "Shiva Linga",
+        "999 Fine Silver",
+        "Sacred Item",
+        "Pooja Ready",
+        "Gift Wrapped"
+    ]
+},
+{
+    "id":"s24",
+    "name":"Silver Mangalsutra Pendant",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Pendant",
+    "badge":"New",
+    "weight":"9g",
+    "purity":"925 Sterling",
+    "finish":"Polished",
+    "price":"₹1,040",
+    "making":"₹110",
+    "desc":"Modern silver mangalsutra pendant — a contemporary take on a beloved traditional ornament.",
+    "features":[
+        "Modern Design",
+        "Mangalsutra Style",
+        "925 Sterling Silver",
+        "Polished Finish",
+        "Contemporary"
+    ]
+},
+{
+    "id":"s25",
+    "name":"Silver Pooja Thali Set",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Idol",
+    "badge":"Hot",
+    "weight":"400g",
+    "purity":"999 Fine Silver",
+    "finish":"Polished",
+    "price":"₹30,800",
+    "making":"₹2,500",
+    "desc":"Complete silver pooja thali set with diya, kalash and incense holder. Premium gifting choice.",
+    "features":[
+        "Complete Thali Set",
+        "Diya + Kalash",
+        "999 Fine Silver",
+        "Premium Gift",
+        "Box Included"
+    ]
+},
+{
+    "id":"s26",
+    "name":"Silver Stud Earrings Ball",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Earring",
+    "badge":"",
+    "weight":"3g",
+    "purity":"925 Sterling",
+    "finish":"Polished",
+    "price":"₹240",
+    "making":"₹40",
+    "desc":"Simple round ball stud earrings. Everyday essential that goes with any outfit.",
+    "features":[
+        "Ball Studs",
+        "Push Back",
+        "925 Sterling Silver",
+        "Everyday Wear",
+        "Polished Finish"
+    ]
+},
+{
+    "id":"s27",
+    "name":"Oxidised Jhumka Cluster",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Earring",
+    "badge":"Bestseller",
+    "weight":"25g",
+    "purity":"925 Sterling",
+    "finish":"Oxidised",
+    "price":"₹1,950",
+    "making":"₹220",
+    "desc":"Large cluster oxidised jhumka with multicolour bead drops. Bold statement ethnic earrings.",
+    "features":[
+        "Cluster Design",
+        "Multicolour Beads",
+        "Oxidised Finish",
+        "925 Sterling Silver",
+        "Statement Earrings"
+    ]
+},
+{
+    "id":"s28",
+    "name":"Silver Chain 20\" Thin",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Necklace",
+    "badge":"",
+    "weight":"8g",
+    "purity":"925 Sterling",
+    "finish":"Polished",
+    "price":"₹620",
+    "making":"₹70",
+    "desc":"Thin delicate silver chain — ideal for pendants and layering. Lightweight for daily wear.",
+    "features":[
+        "Thin Design",
+        "20\" Length",
+        "Pendant Ready",
+        "925 Sterling Silver",
+        "Layering Chain"
+    ]
+},
+{
+    "id":"s29",
+    "name":"Silver Adjustable Ring",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Ring",
+    "badge":"New",
+    "weight":"6g",
+    "purity":"925 Sterling",
+    "finish":"Polished",
+    "price":"₹810",
+    "making":"₹85",
+    "desc":"Open-band adjustable silver ring — fits all sizes. Ideal for gifting without knowing ring size.",
+    "features":[
+        "Adjustable Size",
+        "Open Band",
+        "Fits All",
+        "925 Sterling Silver",
+        "Gift Friendly"
+    ]
+},
+{
+    "id":"s30",
+    "name":"Silver Coin Laxmi-Ganesh",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Idol",
+    "badge":"Bestseller",
+    "weight":"100g",
+    "purity":"999 Fine Silver",
+    "finish":"Polished",
+    "price":"₹7,700",
+    "making":"₹600",
+    "desc":"Combined Laxmi-Ganesh silver coin — the ultimate Diwali gift for businesses and families.",
+    "features":[
+        "Laxmi-Ganesh",
+        "Combined Coin",
+        "999 Fine Silver",
+        "Diwali Gift",
+        "100g Weight"
+    ]
+},
+{
+    "id":"s31",
+    "name":"Silver Ear Cuff Set",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Earring",
+    "badge":"",
+    "weight":"6g",
+    "purity":"925 Sterling",
+    "finish":"Polished",
+    "price":"₹480",
+    "making":"₹60",
+    "desc":"Trendy ear cuff set — no piercing needed. Modern minimalist design for fashion-forward buyers.",
+    "features":[
+        "No Piercing Needed",
+        "Ear Cuff",
+        "Modern Style",
+        "925 Sterling Silver",
+        "Set of 2"
+    ]
+},
+{
+    "id":"s32",
+    "name":"Silver Oxidised Nath",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Necklace",
+    "badge":"",
+    "weight":"12g",
+    "purity":"925 Sterling",
+    "finish":"Oxidised",
+    "price":"₹950",
+    "making":"₹100",
+    "desc":"Traditional oxidised silver nose ring (nath) with chain. Stunning for brides and festive looks.",
+    "features":[
+        "Nath Style",
+        "With Chain",
+        "Oxidised Finish",
+        "925 Sterling Silver",
+        "Bridal Wear"
+    ]
+},
+{
+    "id":"s33",
+    "name":"Silver Bracelet Kids",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Bracelet",
+    "badge":"New",
+    "weight":"8g",
+    "purity":"925 Sterling",
+    "finish":"Polished",
+    "price":"₹620",
+    "making":"₹70",
+    "desc":"Cute hearts-and-flowers silver bracelet for children. Perfect baby shower or birthday gift.",
+    "features":[
+        "Kids Size",
+        "Hearts & Flowers",
+        "925 Sterling Silver",
+        "Gift Ready",
+        "Safe Design"
+    ]
+},
+{
+    "id":"s34",
+    "name":"Balaji Silver Idol (4\")",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Idol",
+    "badge":"",
+    "weight":"180g",
+    "purity":"999 Fine Silver",
+    "finish":"Polished",
+    "price":"₹13,860",
+    "making":"₹1,100",
+    "desc":"Lord Venkateswara (Balaji) idol in fine silver. Sacred idol for home mandir and gifting.",
+    "features":[
+        "Balaji / Venkateswara",
+        "4 Inch Height",
+        "999 Fine Silver",
+        "Mandir Ready",
+        "Gift Box"
+    ]
+},
+{
+    "id":"s35",
+    "name":"Silver Om Pendant",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Pendant",
+    "badge":"",
+    "weight":"7g",
+    "purity":"925 Sterling",
+    "finish":"Polished",
+    "price":"₹810",
+    "making":"₹85",
+    "desc":"Sacred Om pendant in 925 silver with polished shine. Wearable spirituality for daily use.",
+    "features":[
+        "Om Symbol",
+        "Sacred Design",
+        "925 Sterling Silver",
+        "Daily Wear",
+        "Polished Finish"
+    ]
+},
+{
+    "id":"s36",
+    "name":"Silver Maang Tikka",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Necklace",
+    "badge":"Hot",
+    "weight":"14g",
+    "purity":"925 Sterling",
+    "finish":"Polished",
+    "price":"₹1,080",
+    "making":"₹120",
+    "desc":"Classic silver maang tikka with drop pearl. Completes bridal and festive looks beautifully.",
+    "features":[
+        "Pearl Drop",
+        "Maang Tikka",
+        "925 Sterling Silver",
+        "Bridal Wear",
+        "Polished Finish"
+    ]
+},
+{
+    "id":"s37",
+    "name":"Silver Banana Bangle",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Bangle",
+    "badge":"",
+    "weight":"45g",
+    "purity":"925 Sterling",
+    "finish":"Polished",
+    "price":"₹3,465",
+    "making":"₹280",
+    "desc":"Traditional banana (kela) shaped bangle — a beloved style in Maharashtra and Karnataka.",
+    "features":[
+        "Banana Shape",
+        "Traditional Design",
+        "925 Sterling Silver",
+        "Maharashtra Style",
+        "Polished Finish"
+    ]
+},
+{
+    "id":"s38",
+    "name":"Silver Snake Chain 24\"",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Necklace",
+    "badge":"New",
+    "weight":"12g",
+    "purity":"925 Sterling",
+    "finish":"Polished",
+    "price":"₹925",
+    "making":"₹95",
+    "desc":"Smooth snake chain in 925 silver. A sleek and versatile chain for pendants and solo wear.",
+    "features":[
+        "Snake Pattern",
+        "24\" Length",
+        "925 Sterling Silver",
+        "Pendant Ready",
+        "Smooth Texture"
+    ]
+},
+{
+    "id":"s39",
+    "name":"Silver Shankh Figurine",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Idol",
+    "badge":"",
+    "weight":"120g",
+    "purity":"999 Fine Silver",
+    "finish":"Polished",
+    "price":"₹9,240",
+    "making":"₹750",
+    "desc":"Sacred conch shell (shankh) in fine silver. Used in daily puja rituals and as decor.",
+    "features":[
+        "Shankh / Conch Shell",
+        "999 Fine Silver",
+        "Puja Item",
+        "Decorative",
+        "Gift Ready"
+    ]
+},
+{
+    "id":"s40",
+    "name":"Oxidised Hasli Necklace",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Necklace",
+    "badge":"Bestseller",
+    "weight":"70g",
+    "purity":"925 Sterling",
+    "finish":"Oxidised",
+    "price":"₹5,400",
+    "making":"₹420",
+    "desc":"Bold oxidised hasli (rigid collar) necklace with intricate tribal detailing. A head-turner at any event.",
+    "features":[
+        "Hasli Design",
+        "Rigid Collar",
+        "Oxidised Finish",
+        "925 Sterling Silver",
+        "Tribal Detailing"
+    ]
+},
+{
+    "id":"s41",
+    "name":"Silver Infinity Ring",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Ring",
+    "badge":"",
+    "weight":"5g",
+    "purity":"925 Sterling",
+    "finish":"Polished",
+    "price":"₹680",
+    "making":"₹75",
+    "desc":"Classic infinity symbol ring in polished silver. Symbolises eternal love — a perfect gift.",
+    "features":[
+        "Infinity Symbol",
+        "Eternal Love",
+        "925 Sterling Silver",
+        "Gift Perfect",
+        "Polished Finish"
+    ]
+},
+{
+    "id":"s42",
+    "name":"Meenakari Jhumka Silver",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Earring",
+    "badge":"Hot",
+    "weight":"20g",
+    "purity":"925 Sterling",
+    "finish":"Meenakari",
+    "price":"₹1,580",
+    "making":"₹170",
+    "desc":"Silver jhumka with vibrant blue and red meenakari enamel. Colourful ethnic jewellery at its best.",
+    "features":[
+        "Meenakari Enamel",
+        "Blue & Red Colours",
+        "Jhumka Style",
+        "925 Sterling Silver",
+        "Ethnic Design"
+    ]
+},
+{
+    "id":"s43",
+    "name":"Silver Lakshmi Coin Pendant",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Pendant",
+    "badge":"Bestseller",
+    "weight":"12g",
+    "purity":"925 Sterling",
+    "finish":"Polished",
+    "price":"₹1,390",
+    "making":"₹130",
+    "desc":"Embossed Goddess Lakshmi coin pendant in 925 silver. Auspicious and elegant for daily wear.",
+    "features":[
+        "Lakshmi Motif",
+        "Coin Shape",
+        "925 Sterling Silver",
+        "Daily Wear",
+        "Auspicious"
+    ]
+},
+{
+    "id":"s44",
+    "name":"Silver Haath Phool",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Bracelet",
+    "badge":"New",
+    "weight":"32g",
+    "purity":"925 Sterling",
+    "finish":"Polished",
+    "price":"₹2,465",
+    "making":"₹230",
+    "desc":"Silver haath phool (hand flower) with ring and bracelet. Traditional bridal hand jewellery.",
+    "features":[
+        "Haath Phool Style",
+        "Ring + Bracelet",
+        "925 Sterling Silver",
+        "Bridal Wear",
+        "Traditional"
+    ]
+},
+{
+    "id":"s45",
+    "name":"Silver Ganesh Coin 50g",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Idol",
+    "badge":"",
+    "weight":"50g",
+    "purity":"999 Fine Silver",
+    "finish":"Polished",
+    "price":"₹3,850",
+    "making":"₹300",
+    "desc":"50g Ganesh silver coin. Cherished gifting item for Ganesh Chaturthi, Diwali and business openings.",
+    "features":[
+        "Ganesh Motif",
+        "50g Weight",
+        "999 Fine Silver",
+        "Festival Gift",
+        "Gift Wrapped"
+    ]
+},
+{
+    "id":"s46",
+    "name":"Silver Bib Statement Necklace",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Necklace",
+    "badge":"",
+    "weight":"72g",
+    "purity":"925 Sterling",
+    "finish":"Oxidised",
+    "price":"₹5,550",
+    "making":"₹430",
+    "desc":"Wide bib statement necklace with layered oxidised chains and stone accents. Bold and dramatic.",
+    "features":[
+        "Bib Design",
+        "Layered Chains",
+        "Stone Accents",
+        "925 Sterling Silver",
+        "Statement Piece"
+    ]
+},
+{
+    "id":"s47",
+    "name":"Silver Drop Pearl Earrings",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Earring",
+    "badge":"",
+    "weight":"8g",
+    "purity":"925 Sterling",
+    "finish":"Polished",
+    "price":"₹640",
+    "making":"₹70",
+    "desc":"Simple fresh-water pearl drop earrings in silver. Elegant for office wear and casual occasions.",
+    "features":[
+        "Fresh-Water Pearl",
+        "Drop Style",
+        "925 Sterling Silver",
+        "Office Wear",
+        "Polished Finish"
+    ]
+},
+{
+    "id":"s48",
+    "name":"Silver Elephant Charm Payal",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Payal",
+    "badge":"Hot",
+    "weight":"42g",
+    "purity":"925 Sterling",
+    "finish":"Oxidised",
+    "price":"₹3,235",
+    "making":"₹260",
+    "desc":"Unique payal with elephant charms and oxidised finish. Bohemian style for festivals and beach occasions.",
+    "features":[
+        "Elephant Charms",
+        "Oxidised Finish",
+        "925 Sterling Silver",
+        "Boho Style",
+        "Festival Wear"
+    ]
+},
+{
+    "id":"s49",
+    "name":"Silver Gemstone Bracelet",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Bracelet",
+    "badge":"New",
+    "weight":"18g",
+    "purity":"925 Sterling",
+    "finish":"Polished",
+    "price":"₹1,390",
+    "making":"₹140",
+    "desc":"Silver bracelet with alternating amethyst and garnet stones. Colourful and chic for any occasion.",
+    "features":[
+        "Amethyst & Garnet",
+        "Alternating Stones",
+        "925 Sterling Silver",
+        "Polished Finish",
+        "Colourful Design"
+    ]
+},
+{
+    "id":"s50",
+    "name":"Silver Saraswati Idol (5\")",
+    "images":[r"product images gold\g1\1.png"],
+    "category":"Idol",
+    "badge":"Bestseller",
+    "weight":"200g",
+    "purity":"999 Fine Silver",
+    "finish":"Polished",
+    "price":"₹15,400",
+    "making":"₹1,200",
+    "desc":"Goddess Saraswati idol in fine silver with veena. Gifted on Saraswati Puja, Vasant Panchami and housewarmings.",
+    "features":[
+        "Goddess Saraswati",
+        "With Veena",
+        "5 Inch Height",
+        "999 Fine Silver",
+        "Gift Box Included"
+    ]
+}
 ]
 
 def badge_label(badge):
@@ -205,14 +2060,25 @@ def make_page(p, ptype, imgs, prev_id, next_id, all_products):
 
     features_html = ''.join(f'<li>✦ {f}</li>' for f in p.get('features', []))
 
-    thumb_html = ''.join(f'<img class="thumb{" active" if i==0 else ""}" src="{src}" alt="View {i+1}" onclick="setMain(this,\'{src}\')">' for i,src in enumerate(imgs))
+    thumb_html = ''.join(
+    f'''
+    <img
+        class="thumb{" active" if i==0 else ""}"
+        src="{src}"
+        data-full="{src}"
+        alt="View {i+1}"
+        onclick="setMain(this)"
+    >
+    '''
+    for i, src in enumerate(imgs)
+)
 
     # related products (same category, different id, max 4)
     related = [x for x in all_products if x['category']==p['category'] and x['id']!=p['id']][:4]
     related_html = ''
     for r in related:
-        ri = all_products.index(r) % len(GOLD_IMG_SETS if is_gold else SILVER_IMG_SETS)
-        rimg = (GOLD_IMG_SETS if is_gold else SILVER_IMG_SETS)[ri][0]
+        # ri = all_products.index(r) % len(GOLD_IMG_SETS if is_gold else SILVER_IMG_SETS)
+        rimg = "../" + r["images"][0]
         rwa = urllib.parse.quote(f"Hello! I am interested in \"{r['name']}\" priced at {r['price']}.")
         related_html += f'''
         <a class="rel-card" href="{r['id']}.html">
@@ -536,82 +2402,168 @@ footer span{{color:{accent};}}
 </div>""" if related_html else ''}
 
 <footer>
-  © 2025 <span>Nandgaonkar Jewellers</span> · Nashik, Maharashtra · <a href="https://wa.me/{PHONE}" style="color:{accent}">+91 95183 56108</a>
+  © 2025 <span>Nandgaonkar Jewellers</span> · Nashik, Maharashtra ·
+  <a href="https://wa.me/{PHONE}" style="color:{accent}">
+    +91 95183 56108
+  </a>
 </footer>
 
 <script>
-function setMain(el, src) {{
-  document.getElementById('main-img').src = src;
-  document.querySelectorAll('.thumb').forEach(t => t.classList.remove('active'));
-  el.classList.add('active');
+
+function setMain(el) {{
+
+    const src = el.getAttribute('data-full');
+
+    document.getElementById('main-img').src = src;
+
+    document.querySelectorAll('.thumb').forEach(function(t) {{
+        t.classList.remove('active');
+    }});
+
+    el.classList.add('active');
+
 }}
+
 </script>
+
 </body>
 </html>'''
     return html
-
 # Generate gold pages
 for i, p in enumerate(gold_products):
-    imgs = GOLD_IMG_SETS[i % len(GOLD_IMG_SETS)]
+    imgs = [
+        "../" + img
+        for img in p["images"]
+    ]
     prev_id = gold_products[i-1]['id'] if i > 0 else None
     next_id = gold_products[i+1]['id'] if i < len(gold_products)-1 else None
     html = make_page(p, 'gold', imgs, prev_id, next_id, gold_products)
     with open(f'{OUT}/{p["id"]}.html', 'w', encoding='utf-8') as f:
         f.write(html)
-
 # Generate silver pages
+
 for i, p in enumerate(silver_products):
-    imgs = SILVER_IMG_SETS[i % len(SILVER_IMG_SETS)]
-    prev_id = silver_products[i-1]['id'] if i > 0 else None
-    next_id = silver_products[i+1]['id'] if i < len(silver_products)-1 else None
-    html = make_page(p, 'silver', imgs, prev_id, next_id, silver_products)
-    with open(f'{OUT}/{p["id"]}.html', 'w', encoding='utf-8') as f:
+
+    # safely get images from product dictionary
+    imgs = [
+    "../" + img
+    for img in p["images"]
+]
+
+    # previous / next navigation
+    prev_id = (
+        silver_products[i - 1]['id']
+        if i > 0
+        else None
+    )
+
+    next_id = (
+        silver_products[i + 1]['id']
+        if i < len(silver_products) - 1
+        else None
+    )
+
+    # generate html
+    html = make_page(
+        p,
+        'silver',
+        imgs,
+        prev_id,
+        next_id,
+        silver_products
+    )
+
+    # save file
+    with open(
+        f'{OUT}/{p["id"]}.html',
+        'w',
+        encoding='utf-8'
+    ) as f:
+
         f.write(html)
 
-print(f"Generated {len(gold_products) + len(silver_products)} product pages!")
+print(
+    f"Generated {len(gold_products) + len(silver_products)} product pages!"
+)
 
 def generate_homepage():
     all_cards = ""
 
+    # GOLD PRODUCTS
     for p in gold_products:
-        img = GOLD_IMG_SETS[gold_products.index(p) % len(GOLD_IMG_SETS)][0]
+
+        # safely get image
+        if p.get("images") and len(p["images"]) > 0:
+            img = p["images"][0]
+        else:
+            img = ""
 
         all_cards += f"""
         <div class="product-card">
+
             <a href="products/{p['id']}.html">
-                <img src="{img}" alt="{p['name']}">
+                <img src="{img}" alt="{p['name']}" loading="lazy">
             </a>
 
             <div class="card-body">
-                <p class="card-category">{p['category']}</p>
-                <h3>{p['name']}</h3>
-                <p class="price">{p['price']}</p>
+
+                <p class="card-category">
+                    {p['category']}
+                </p>
+
+                <h3>
+                    {p['name']}
+                </h3>
+
+                <p class="price">
+                    {p['price']}
+                </p>
 
                 <a class="btn" href="products/{p['id']}.html">
                     View Product
                 </a>
+
             </div>
+
         </div>
         """
 
+    # SILVER PRODUCTS
     for p in silver_products:
-        img = SILVER_IMG_SETS[silver_products.index(p) % len(SILVER_IMG_SETS)][0]
+
+        # safely get image
+        if p.get("images") and len(p["images"]) > 0:
+            img = p["images"][0]
+        else:
+            img = ""
 
         all_cards += f"""
         <div class="product-card">
+
             <a href="products/{p['id']}.html">
-                <img src="{img}" alt="{p['name']}">
+                <img src="{img}" alt="{p['name']}" loading="lazy">
             </a>
 
             <div class="card-body">
-                <p class="card-category">{p['category']}</p>
-                <h3>{p['name']}</h3>
-                <p class="price">{p['price']}</p>
+
+                <p class="card-category">
+                    {p['category']}
+                </p>
+
+                <h3>
+                    {p['name']}
+                </h3>
+
+                <p class="price">
+                    {p['price']}
+                </p>
 
                 <a class="btn" href="products/{p['id']}.html">
                     View Product
                 </a>
+
             </div>
+
         </div>
         """
 
@@ -750,10 +2702,14 @@ def generate_homepage():
     gold_cards = ""
     silver_cards = ""
 
-    # GOLD
-    for i, p in enumerate(gold_products):
+    # GOLD PRODUCTS
+    for p in gold_products:
 
-        img = GOLD_IMG_SETS[i % len(GOLD_IMG_SETS)][0]
+        # safely get image
+        if p.get("images") and len(p["images"]) > 0:
+            img = p["images"][0]
+        else:
+            img = ""
 
         gold_cards += product_card(
             p,
@@ -761,17 +2717,20 @@ def generate_homepage():
             True
         )
 
-    # SILVER
-    for i, p in enumerate(silver_products):
+    # SILVER PRODUCTS
+    for p in silver_products:
 
-        img = SILVER_IMG_SETS[i % len(SILVER_IMG_SETS)][0]
+        # safely get image
+        if p.get("images") and len(p["images"]) > 0:
+            img = p["images"][0]
+        else:
+            img = ""
 
         silver_cards += product_card(
             p,
             img,
             False
         )
-
     homepage = f"""
 <!DOCTYPE html>
 <html lang="en">

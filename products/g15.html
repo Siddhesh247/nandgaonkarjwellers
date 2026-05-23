@@ -261,10 +261,18 @@ footer span{color:#C9A84C;}
   <!-- GALLERY -->
   <div class="gallery">
     <div class="main-img-wrap">
-      <img id="main-img" src="https://images.pexels.com/photos/1721932/pexels-photo-1721932.jpeg?auto=compress&w=800" alt="Gold Payal with Bells">
+      <img id="main-img" src="../product images gold\g1\1.png" alt="Gold Payal with Bells">
       
     </div>
-    <div class="thumbs"><img class="thumb active" src="https://images.pexels.com/photos/1721932/pexels-photo-1721932.jpeg?auto=compress&w=800" alt="View 1" onclick="setMain(this,'https://images.pexels.com/photos/1721932/pexels-photo-1721932.jpeg?auto=compress&w=800')"><img class="thumb" src="https://images.pexels.com/photos/10478867/pexels-photo-10478867.jpeg?auto=compress&w=800" alt="View 2" onclick="setMain(this,'https://images.pexels.com/photos/10478867/pexels-photo-10478867.jpeg?auto=compress&w=800')"><img class="thumb" src="https://images.pexels.com/photos/10478906/pexels-photo-10478906.jpeg?auto=compress&w=800" alt="View 3" onclick="setMain(this,'https://images.pexels.com/photos/10478906/pexels-photo-10478906.jpeg?auto=compress&w=800')"><img class="thumb" src="https://images.pexels.com/photos/691046/pexels-photo-691046.jpeg?auto=compress&w=800" alt="View 4" onclick="setMain(this,'https://images.pexels.com/photos/691046/pexels-photo-691046.jpeg?auto=compress&w=800')"></div>
+    <div class="thumbs">
+    <img
+        class="thumb active"
+        src="../product images gold\g1\1.png"
+        data-full="../product images gold\g1\1.png"
+        alt="View 1"
+        onclick="setMain(this)"
+    >
+    </div>
   </div>
 
   <!-- INFO -->
@@ -329,7 +337,7 @@ footer span{color:#C9A84C;}
   <p class="related-sub">More Anklet from our collection</p>
   <div class="related-grid">
         <a class="rel-card" href="g39.html">
-          <img src="https://images.pexels.com/photos/10478906/pexels-photo-10478906.jpeg?auto=compress&w=800" alt="Gold Anklet with Ghungroo" loading="lazy">
+          <img src="../product images gold\g1\1.png" alt="Gold Anklet with Ghungroo" loading="lazy">
           <div class="rel-body">
             <p class="rel-cat">Anklet</p>
             <p class="rel-name">Gold Anklet with Ghungroo</p>
@@ -337,7 +345,7 @@ footer span{color:#C9A84C;}
           </div>
         </a>
         <a class="rel-card" href="g50.html">
-          <img src="https://images.pexels.com/photos/1721932/pexels-photo-1721932.jpeg?auto=compress&w=800" alt="Five Petal Flower Anklet" loading="lazy">
+          <img src="../product images gold\g1\1.png" alt="Five Petal Flower Anklet" loading="lazy">
           <div class="rel-body">
             <p class="rel-cat">Anklet</p>
             <p class="rel-name">Five Petal Flower Anklet</p>
@@ -347,15 +355,29 @@ footer span{color:#C9A84C;}
 </div>
 
 <footer>
-  © 2025 <span>Nandgaonkar Jewellers</span> · Nashik, Maharashtra · <a href="https://wa.me/919518356108" style="color:#C9A84C">+91 95183 56108</a>
+  © 2025 <span>Nandgaonkar Jewellers</span> · Nashik, Maharashtra ·
+  <a href="https://wa.me/919518356108" style="color:#C9A84C">
+    +91 95183 56108
+  </a>
 </footer>
 
 <script>
-function setMain(el, src) {
-  document.getElementById('main-img').src = src;
-  document.querySelectorAll('.thumb').forEach(t => t.classList.remove('active'));
-  el.classList.add('active');
+
+function setMain(el) {
+
+    const src = el.getAttribute('data-full');
+
+    document.getElementById('main-img').src = src;
+
+    document.querySelectorAll('.thumb').forEach(function(t) {
+        t.classList.remove('active');
+    });
+
+    el.classList.add('active');
+
 }
+
 </script>
+
 </body>
 </html>
